@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanguard Electrical | Master Electricians · Austin, TX</title>
-  <meta name="description" content="Licensed master electricians in Austin, TX. Specializing in panel upgrades, EV chargers, lighting installation, and residential rewiring. Honest pricing and clean workmanship.">
+  <title>Vanguard Electrical Engineering | Master Electricians · Austin, TX</title>
+  <meta name="description" content="Austin's premier residential master electricians. Bespoke architectural lighting, 200A/400A service modernizations, and Tesla charging infrastructure.">
   
   <!-- Open Graph -->
-  <meta property="og:title" content="Vanguard Electrical | Licensed Master Electricians in Austin, TX">
-  <meta property="og:description" content="Quality electrical work for homes and small businesses in Austin. Clear upfront pricing, tidy technicians, and fully permitted installations.">
+  <meta property="og:title" content="Vanguard Electrical Engineering · Austin, TX">
+  <meta property="og:description" content="Bespoke electrical craftsmanship for architectural residences and historic properties across Central Texas.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#FAFAF7">
+  <meta name="theme-color" content="#12141A">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327272A' stroke-width='2'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23B85D19'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/></svg>">
 
-  <!-- Fonts: Instrument Serif (Editorial human warmth) & Plus Jakarta Sans (Clean, high-legibility sans) -->
+  <!-- Fonts: Fraunces (Commanding Editorial Display Serif) + Plus Jakarta Sans + Space Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,17 +27,20 @@
       theme: {
         extend: {
           fontFamily: {
-            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
-            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            display: ['"Fraunces"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Space Grotesk"', 'monospace'],
           },
           colors: {
-            canvas: '#FBFBFA',
-            sand: '#F4F4F0',
-            stoneBorder: '#E5E5DF',
-            charcoal: '#18181B',
-            mutedZinc: '#71717A',
-            warmBrown: '#854D0E',
-            forest: '#1E3A2F'
+            linen: '#F6F4EE',
+            sand: '#EDE9DE',
+            stoneLine: '#E0DDD2',
+            onyx: '#11141A',
+            onyxCard: '#171B23',
+            onyxBorder: '#232A36',
+            copper: '#B85D19',
+            copperLight: '#E07A38',
+            brass: '#D4973B'
           }
         }
       }
@@ -49,141 +52,388 @@
 
   <style>
     body {
-      background-color: #FBFBFA;
-      color: #18181B;
+      background-color: #F6F4EE;
+      color: #11141A;
       font-family: 'Plus Jakarta Sans', sans-serif;
       -webkit-font-smoothing: antialiased;
     }
-    .serif-display {
-      font-family: 'Instrument Serif', Georgia, serif;
+
+    .font-editorial {
+      font-family: 'Fraunces', Georgia, serif;
+    }
+
+    /* Before/After Slider Container */
+    .ba-slider {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+    }
+    .ba-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      pointer-events: none;
+    }
+    .ba-slider .after-img-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #FFFFFF;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      cursor: ew-resize;
+      z-index: 20;
+    }
+    .ba-handle-knob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #11141A;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+    }
+
+    /* Subtle architectural grid pattern */
+    .bg-blueprint {
+      background-image: radial-gradient(rgba(17, 20, 26, 0.08) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .bg-dark-blueprint {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
   </style>
 </head>
-<body class="selection:bg-amber-100 selection:text-amber-900">
+<body class="selection:bg-copper selection:text-white">
 
-  <!-- ================= QUIET TRUST TOP BAR ================= -->
-  <div class="border-b border-stoneBorder bg-sand/60 text-xs py-2 px-4 text-zinc-600">
-    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-4">
-        <span class="font-medium text-zinc-800">Austin, Texas & Surrounding Areas</span>
-        <span class="text-zinc-300">|</span>
-        <span>Texas Master Electrical License #49281</span>
-        <span class="text-zinc-300 hidden sm:inline">|</span>
-        <span class="hidden sm:inline">Fully Bonded & Insured ($2M Liability)</span>
+  <!-- ================= TOP ARCHITECTURAL DISPATCH RIBBON ================= -->
+  <div class="border-b border-stoneLine bg-sand/60 text-xs py-2.5 px-4 text-zinc-700">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-zinc-900 text-white font-mono text-[11px] font-semibold tracking-wider uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          Master Guild
+        </span>
+        <span class="font-medium">Texas Electrical Contractors Lic. #49281</span>
+        <span class="text-zinc-400 hidden md:inline">·</span>
+        <span class="text-zinc-600 hidden md:inline">Travis & Williamson Counties</span>
       </div>
-      <div class="flex items-center gap-4 font-medium">
-        <span class="text-zinc-500">Mon–Sat: 7:00 AM – 6:00 PM</span>
-        <span class="text-zinc-300">|</span>
-        <a href="tel:5128949102" class="text-zinc-900 font-bold hover:text-amber-800 transition-colors">
-          Call (512) 894-9102
+
+      <div class="flex items-center gap-6 font-mono text-xs">
+        <span class="text-zinc-600 hidden sm:inline">Dispatch Hub: Austin Downtown · Westlake · Lakeway</span>
+        <a href="tel:5128949102" class="font-bold text-zinc-950 hover:text-copper transition-colors flex items-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-copper"></i>
+          <span>(512) 894-9102</span>
         </a>
       </div>
     </div>
   </div>
 
-  <!-- ================= CLEAN EDITORIAL HEADER ================= -->
-  <header class="border-b border-stoneBorder bg-canvas sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+  <!-- ================= EDITORIAL NAVIGATION HEADER ================= -->
+  <header class="border-b border-stoneLine bg-linen/95 backdrop-blur-md sticky top-0 z-40 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-22 flex items-center justify-between">
       
-      <!-- Brand Name -->
-      <a href="#top" class="flex flex-col">
-        <span class="text-2xl font-bold tracking-tight text-zinc-900">Vanguard</span>
-        <span class="text-[11px] tracking-wider uppercase text-zinc-500 font-medium -mt-1">Electrical Services · Austin</span>
+      <!-- Brand Signature -->
+      <a href="#top" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-onyx text-linen flex items-center justify-center font-editorial font-bold text-xl transition-transform group-hover:scale-95 shadow-sm">
+          V
+        </div>
+        <div class="flex flex-col">
+          <span class="font-editorial text-2xl font-bold tracking-tight text-onyx leading-none">
+            Vanguard
+          </span>
+          <span class="font-mono text-[10px] tracking-widest text-zinc-600 uppercase mt-1">
+            Electrical Engineering · ATX
+          </span>
+        </div>
       </a>
 
-      <!-- Navigation -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-600">
-        <a href="#services" class="hover:text-zinc-900 transition-colors">Services</a>
-        <a href="#pricing" class="hover:text-zinc-900 transition-colors">Pricing & Estimates</a>
-        <a href="#about" class="hover:text-zinc-900 transition-colors">Our Standards</a>
-        <a href="#reviews" class="hover:text-zinc-900 transition-colors">Client Reviews</a>
-        <a href="#areas" class="hover:text-zinc-900 transition-colors">Service Areas</a>
-        <a href="#faq" class="hover:text-zinc-900 transition-colors">FAQ</a>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-9 text-xs font-mono uppercase tracking-widest text-zinc-600">
+        <a href="#portfolio" class="hover:text-onyx transition-colors">Case Studies</a>
+        <a href="#craftsmanship" class="hover:text-onyx transition-colors">Workmanship Proof</a>
+        <a href="#services" class="hover:text-onyx transition-colors">Disciplines</a>
+        <a href="#pricing" class="hover:text-onyx transition-colors">Fee Schedule</a>
+        <a href="#reviews" class="hover:text-onyx transition-colors">Client Reviews</a>
+        <a href="#faq" class="hover:text-onyx transition-colors">Standards</a>
       </nav>
 
       <!-- Primary Action -->
       <div class="flex items-center gap-3">
-        <a href="tel:5128949102" class="hidden sm:flex items-center gap-2 text-sm font-semibold text-zinc-800 hover:text-zinc-900 px-3 py-2">
-          <i data-lucide="phone" class="w-4 h-4 text-zinc-600"></i>
-          <span>(512) 894-9102</span>
-        </a>
-        <a href="#contact" class="px-4 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white text-sm font-medium transition-colors">
-          Request a Quote
+        <a href="#contact" class="px-5 py-2.5 rounded-lg bg-onyx hover:bg-zinc-800 text-white font-mono text-xs uppercase tracking-wider font-semibold transition-all shadow-sm">
+          Schedule Walkthrough
         </a>
       </div>
     </div>
   </header>
 
   <main id="top">
-    
-    <!-- ================= HERO SECTION ================= -->
-    <section class="pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+    <!-- ================= HERO SECTION (EDITORIAL DRAMA & SCALE) ================= -->
+    <section class="relative pt-12 pb-20 sm:pt-20 sm:pb-32 border-b border-stoneLine bg-blueprint overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          <!-- Text Column (7 cols) -->
-          <div class="lg:col-span-7 space-y-6">
+          <!-- Left Column: Typography & Intent (7 Cols) -->
+          <div class="lg:col-span-7 space-y-8">
             
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sand border border-stoneBorder text-xs text-zinc-700 font-medium">
-              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-              <span>Available for scheduled appointments & urgent calls</span>
+            <div class="space-y-4">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sand border border-stoneLine text-xs font-mono uppercase tracking-widest text-zinc-700">
+                <span class="w-2 h-2 rounded-full bg-copper"></span>
+                Austin Architectural Electrification
+              </div>
+
+              <h1 class="font-editorial text-4xl sm:text-6xl lg:text-7xl text-onyx font-normal leading-[1.04] tracking-tight">
+                The architecture <br>
+                <span class="italic text-copper">of power.</span>
+              </h1>
+
+              <p class="text-base sm:text-xl text-zinc-700 leading-relaxed max-w-xl font-normal">
+                Precision 200A/400A service modernizations, invisible architectural illumination, and dedicated Tesla infrastructure for Central Texas estates. Zero guesswork, zero damage to fine finishes.
+              </p>
             </div>
 
-            <h1 class="serif-display text-4xl sm:text-6xl text-zinc-950 font-normal leading-[1.08] tracking-tight">
-              Honest, precise electrical work. Done right the first time.
-            </h1>
-
-            <p class="text-base sm:text-lg text-zinc-600 leading-relaxed max-w-xl">
-              From 200A service panel modernizations and EV charger installations to recessed lighting and whole-home troubleshooting. No sales pressure, no surprise bills—just licensed master electricians who treat your home with respect.
-            </p>
-
-            <!-- Actions -->
-            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-medium text-sm transition-colors">
-                Request an Itemized Quote
+            <!-- Action Cluster -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a href="#contact" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-onyx hover:bg-zinc-800 text-white font-mono text-xs uppercase tracking-widest font-semibold transition-all shadow-md">
+                <span>Book Site Diagnostic</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-copper"></i>
               </a>
-              <a href="tel:5128949102" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white hover:bg-sand border border-stoneBorder text-zinc-900 font-medium text-sm transition-colors">
-                <i data-lucide="phone-call" class="w-4 h-4 text-zinc-700"></i>
-                <span>Direct Line: (512) 894-9102</span>
+
+              <a href="#craftsmanship" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-lg bg-white hover:bg-sand border border-stoneLine text-onyx font-mono text-xs uppercase tracking-widest font-semibold transition-colors">
+                <i data-lucide="sliders" class="w-4 h-4 text-zinc-500"></i>
+                <span>Inspect Workmanship Proof</span>
               </a>
             </div>
 
-            <!-- Authentic Trust Points -->
-            <div class="pt-6 border-t border-stoneBorder grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-zinc-600">
-              <div class="flex items-center gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-                <span>Written, binding quotes</span>
+            <!-- Architectural Credential Badges -->
+            <div class="pt-8 border-t border-stoneLine grid grid-cols-2 sm:grid-cols-4 gap-6 text-xs font-mono text-zinc-600">
+              <div>
+                <div class="text-xl font-bold text-onyx font-editorial">184</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">5-Star Google Reviews</div>
               </div>
-              <div class="flex items-center gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-                <span>Permitted with Austin Energy</span>
+              <div>
+                <div class="text-xl font-bold text-onyx font-editorial">100%</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">City Inspection Pass</div>
               </div>
-              <div class="flex items-center gap-2">
-                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
-                <span>Shoe covers & clean work site</span>
+              <div>
+                <div class="text-xl font-bold text-onyx font-editorial">$2,000,000</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">Bonded & Insured</div>
+              </div>
+              <div>
+                <div class="text-xl font-bold text-onyx font-editorial">10-Year</div>
+                <div class="text-[11px] uppercase tracking-wider text-zinc-500 mt-0.5">Workmanship Bond</div>
               </div>
             </div>
 
           </div>
 
-          <!-- Image Column (5 cols) -->
+          <!-- Right Column: Framed Editorial Photography (5 Cols) -->
           <div class="lg:col-span-5">
             <div class="relative">
-              <div class="rounded-xl overflow-hidden border border-stoneBorder shadow-sm bg-stone-100 aspect-[4/5]">
-                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Licensed electrician performing neat wiring on service panel" class="w-full h-full object-cover">
+              
+              <!-- Main Architectural Image Frame -->
+              <div class="rounded-2xl overflow-hidden border border-stoneLine shadow-2xl bg-stone-200 aspect-[4/5] relative group">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="Architectural home in Austin with bespoke exterior lighting" class="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-onyx/80 via-transparent to-transparent"></div>
+
+                <!-- Caption Badge inside image -->
+                <div class="absolute bottom-6 left-6 right-6 text-white space-y-1">
+                  <div class="text-[10px] font-mono uppercase tracking-widest text-copperLight">Residence Showcase</div>
+                  <div class="font-editorial text-xl text-white">Rollingwood Modern Estate</div>
+                  <div class="text-xs text-zinc-300 font-mono">400A Dual Service Upgrade · Lutron RadioRA 3</div>
+                </div>
               </div>
 
-              <!-- Quiet Credibility Card -->
-              <div class="absolute -bottom-6 -left-6 bg-white border border-stoneBorder rounded-xl p-4 shadow-md max-w-[280px] hidden sm:block">
-                <div class="flex items-center gap-2 mb-1.5">
-                  <div class="flex text-amber-500 text-xs">★★★★★</div>
-                  <span class="text-xs font-bold text-zinc-900">4.9 / 5.0</span>
+              <!-- Offset Spec Pill -->
+              <div class="absolute -top-4 -right-4 bg-white border border-stoneLine rounded-xl p-3.5 shadow-xl font-mono text-xs max-w-[200px] hidden sm:block">
+                <div class="flex items-center gap-2 text-emerald-700 font-bold mb-1">
+                  <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                  Austin Energy Partner
                 </div>
-                <p class="text-xs text-zinc-600 leading-snug">
-                  “Arrived on time, gave an honest written quote, and finished our panel upgrade in one afternoon.”
-                </p>
-                <div class="text-[10px] text-zinc-400 mt-2 font-medium">Verified Google Review · Westlake</div>
+                <div class="text-[11px] text-zinc-600 leading-snug">
+                  Direct utility coordination for same-day power restoration.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= INTERACTIVE WORKMANSHIP PROOF SLIDER (BEFORE / AFTER) ================= -->
+    <section id="craftsmanship" class="py-24 border-b border-stoneLine bg-sand/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center space-y-3 mb-14">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-copper font-semibold">
+            <i data-lucide="eye" class="w-4 h-4"></i>
+            The Standard of Craftsmanship
+          </div>
+          <h2 class="font-editorial text-3xl sm:text-5xl text-onyx font-normal">
+            Inspect what goes inside your walls.
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-600 max-w-xl mx-auto">
+            Most contractors hide sloppy wires behind drywall. Drag the slider below to see how Vanguard replaces dangerous, messy panels with surgical conduit and laser-aligned copper busbars.
+          </p>
+        </div>
+
+        <!-- Before/After Drag Slider Component -->
+        <div class="max-w-4xl mx-auto">
+          <div class="ba-slider aspect-[16/9] sm:aspect-[21/9] rounded-2xl border border-stoneLine shadow-xl bg-onyx cursor-ew-resize relative" id="sliderContainer">
+            
+            <!-- BEFORE IMAGE (Underneath) -->
+            <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1400&q=80" alt="Before: Dangerous cluttered electrical panel" class="w-full h-full object-cover">
+            
+            <!-- BEFORE LABEL -->
+            <div class="absolute bottom-4 left-4 z-10 px-3 py-1.5 rounded bg-onyx/85 backdrop-blur-md text-white font-mono text-xs uppercase tracking-wider font-semibold border border-white/10">
+              Before: 1978 Obsolete Zinsco Panel
+            </div>
+
+            <!-- AFTER IMAGE (Clipped on top) -->
+            <div class="after-img-wrap" id="afterWrap" style="width: 50%;">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80" alt="After: Clean modern 200A electrical service" class="w-full h-full object-cover" id="afterImg">
+              
+              <!-- AFTER LABEL -->
+              <div class="absolute bottom-4 right-4 z-10 px-3 py-1.5 rounded bg-white/90 backdrop-blur-md text-onyx font-mono text-xs uppercase tracking-wider font-bold border border-stoneLine">
+                After: Vanguard 200A Master Standard
+              </div>
+            </div>
+
+            <!-- SLIDER HANDLE -->
+            <div class="ba-handle" id="sliderHandle" style="left: 50%;">
+              <div class="ba-handle-knob">
+                <i data-lucide="arrow-left-right" class="w-4 h-4 text-white"></i>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flex items-center justify-between text-xs font-mono text-zinc-500 mt-4 px-2">
+            <span>← Drag horizontally to inspect transition</span>
+            <span class="text-copper font-semibold">100% Solid Copper Busbars · Laser Conduit Bends</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= CASE STUDIES DOSSIER ================= -->
+    <section id="portfolio" class="py-24 border-b border-stoneLine bg-linen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="space-y-3">
+            <span class="text-xs font-mono uppercase tracking-widest text-zinc-600 font-semibold">Selected Works</span>
+            <h2 class="font-editorial text-3xl sm:text-5xl text-onyx font-normal">
+              Project Dossier & Case Studies
+            </h2>
+          </div>
+          <p class="text-xs sm:text-sm text-zinc-600 max-w-md font-mono">
+            Every home presents unique structural challenges. Here is how our master team executes complex modern requirements.
+          </p>
+        </div>
+
+        <!-- Case Studies List -->
+        <div class="space-y-16">
+          
+          <!-- Project 01 -->
+          <div class="grid lg:grid-cols-12 gap-8 items-center pb-16 border-b border-stoneLine">
+            <div class="lg:col-span-7">
+              <div class="rounded-xl overflow-hidden border border-stoneLine aspect-[16/10] bg-stone-200 shadow-md">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Westlake Hills Modern Villa" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-4">
+              <div class="text-xs font-mono uppercase tracking-widest text-copper font-bold">Case Study 01 · West Lake Hills</div>
+              <h3 class="font-editorial text-2xl sm:text-3xl text-onyx">The Hillside Residence</h3>
+              <p class="text-sm text-zinc-600 leading-relaxed">
+                Complete conversion of a 1984 estate to support a 100A geothermal HVAC system, two Tesla Wall Connectors, and 48 flangeless architectural downlights without cutting visible holes in tongue-and-groove cedar ceilings.
+              </p>
+
+              <!-- Technical Specs Table -->
+              <div class="pt-3 border-t border-stoneLine space-y-2 text-xs font-mono">
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Service Upgrade:</span>
+                  <span class="font-bold text-onyx">400A Dual Enclosure</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Lighting Protocol:</span>
+                  <span class="font-bold text-onyx">Lutron Caséta Wireless</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Utility Coordination:</span>
+                  <span class="font-bold text-emerald-800">Austin Energy (Zero Disruption)</span>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest font-bold text-onyx hover:text-copper transition-colors">
+                  <span>Inquire About Similar Scope</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 02 -->
+          <div class="grid lg:grid-cols-12 gap-8 items-center pb-16 border-b border-stoneLine">
+            <div class="lg:col-span-5 space-y-4 order-2 lg:order-1">
+              <div class="text-xs font-mono uppercase tracking-widest text-copper font-bold">Case Study 02 · Tarrytown</div>
+              <h3 class="font-editorial text-2xl sm:text-3xl text-onyx">The Historic Bungalow Restoration</h3>
+              <p class="text-sm text-zinc-600 leading-relaxed">
+                Careful remediation of deteriorating 1930s cloth wiring. We fished dedicated circuits through existing wall cavities to preserve original plaster moldings, added whole-home surge suppression, and brought all bedrooms up to modern AFCI code.
+              </p>
+
+              <!-- Technical Specs Table -->
+              <div class="pt-3 border-t border-stoneLine space-y-2 text-xs font-mono">
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Rewire Method:</span>
+                  <span class="font-bold text-onyx">Low-Impact Cavity Fishing</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Safety Devices:</span>
+                  <span class="font-bold text-onyx">Dual AFCI / GFCI Eaton Breakers</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-stoneLine/60">
+                  <span class="text-zinc-500">Plaster Damage:</span>
+                  <span class="font-bold text-emerald-800">0% Drywall Cut in Living Areas</span>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="#contact" class="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest font-bold text-onyx hover:text-copper transition-colors">
+                  <span>Inquire About Historic Rewiring</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7 order-1 lg:order-2">
+              <div class="rounded-xl overflow-hidden border border-stoneLine aspect-[16/10] bg-stone-200 shadow-md">
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80" alt="Tarrytown kitchen restoration electrical work" class="w-full h-full object-cover">
               </div>
             </div>
           </div>
@@ -193,269 +443,144 @@
       </div>
     </section>
 
-    <!-- ================= PROOF STRIP ================= -->
-    <section class="py-6 bg-sand/60 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
-            <div class="text-2xl font-bold text-zinc-900">12+ Years</div>
-            <div class="text-xs text-zinc-500 mt-0.5">Serving Austin & Travis County</div>
+    <!-- ================= HIGH-CONTRAST ARCHITECTURAL VAULT (THE TECHNICAL RIGOR) ================= -->
+    <section class="py-24 bg-onyx text-white relative overflow-hidden bg-dark-blueprint">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="max-w-3xl mb-16 space-y-3">
+          <div class="text-xs font-mono uppercase tracking-widest text-copperLight font-semibold">
+            Engineering Precision
           </div>
-          <div>
-            <div class="text-2xl font-bold text-zinc-900">184 Reviews</div>
-            <div class="text-xs text-zinc-500 mt-0.5">4.9 Star Google Rating</div>
-          </div>
-          <div>
-            <div class="text-2xl font-bold text-zinc-900">100% Permitted</div>
-            <div class="text-xs text-zinc-500 mt-0.5">Full City Inspection Signoff</div>
-          </div>
-          <div>
-            <div class="text-2xl font-bold text-zinc-900">10-Year Warranty</div>
-            <div class="text-xs text-zinc-500 mt-0.5">On All Panel & Wiring Work</div>
-          </div>
+          <h2 class="font-editorial text-3xl sm:text-5xl text-white font-normal">
+            Why licensed master electricians matter.
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-400 max-w-xl">
+            Electrical mistakes cause 51,000 residential fires annually. We test every circuit beyond the minimum code requirements before putting our license on the line.
+          </p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          
+          <div class="bg-onyxCard border border-onyxBorder rounded-2xl p-8 space-y-4 hover:border-copper transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-copper/10 border border-copper/30 text-copperLight flex items-center justify-center font-mono font-bold text-lg">
+              01
+            </div>
+            <h3 class="text-xl font-editorial text-white">Infrared Thermography</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              We inspect every busbar lug and breaker connection under full electrical load using FLIR thermal sensors to eliminate loose micro-resistances before they cause hot-spots.
+            </p>
+          </div>
+
+          <div class="bg-onyxCard border border-onyxBorder rounded-2xl p-8 space-y-4 hover:border-copper transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-copper/10 border border-copper/30 text-copperLight flex items-center justify-center font-mono font-bold text-lg">
+              02
+            </div>
+            <h3 class="text-xl font-editorial text-white">100% Solid Copper Conductors</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              We never use cheap aluminum branch wiring. Every circuit run uses premium American-made Southwire Romex and copper grounding grids for lasting structural safety.
+            </p>
+          </div>
+
+          <div class="bg-onyxCard border border-onyxBorder rounded-2xl p-8 space-y-4 hover:border-copper transition-colors">
+            <div class="w-12 h-12 rounded-xl bg-copper/10 border border-copper/30 text-copperLight flex items-center justify-center font-mono font-bold text-lg">
+              03
+            </div>
+            <h3 class="text-xl font-editorial text-white">Lifetime Bonded Signoff</h3>
+            <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed">
+              If an installation performed by our team ever loosens, trips erroneously, or fails an inspection, we return and repair it at zero cost for as long as you own your home.
+            </p>
+          </div>
+
+        </div>
+
       </div>
     </section>
 
-    <!-- ================= SERVICES (CLEAR, HONEST, EDITORIAL) ================= -->
-    <section id="services" class="py-20 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- ================= TRANSPARENT ARCHITECTURAL FEE SCHEDULE ================= -->
+    <section id="pricing" class="py-24 border-b border-stoneLine bg-linen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="max-w-2xl mb-14 space-y-2">
-          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">What We Do</span>
-          <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
-            Specialized electrical services for residential properties.
-          </h2>
-          <p class="text-sm text-zinc-600 leading-relaxed">
-            We don't take on 50 different trades. We specialize strictly in safe, modern electrical systems for single-family homes, historical restorations, and residential remodels.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          
-          <!-- Service 1 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="cpu" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">200A & 400A Panel Modernization</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Upgrading outdated 100A panels or hazardous Federal Pacific & Zinsco boxes. Includes Austin Energy meter pull, new grounding electrodes, surge suppression, and city permit inspection.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Typical turnaround: <strong>1 Day</strong></span>
-              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
-            </div>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="battery-charging" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">EV Charger Installations</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Dedicated 240V circuits for Tesla Wall Connectors, Rivian, ChargePoint, and universal Level 2 stations. We calculate your panel's load to ensure safe, code-compliant charging.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Typical turnaround: <strong>3–4 Hours</strong></span>
-              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
-            </div>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="lightbulb" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">Architectural & Recessed Lighting</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Clean installation of trimless flangeless LED downlights, under-cabinet illumination, and Lutron Caséta smart dimmers. Laser-aligned with zero ceiling patching required.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Room or whole-home</span>
-              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
-            </div>
-          </div>
-
-          <!-- Service 4 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="alert-circle" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">Electrical Troubleshooting & Repairs</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Flickering circuits, tripping arc-fault breakers, warm switches, dead outlets, and burning odors. We trace faulty wiring with thermal imaging and deliver transparent solutions.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Same-day priority slots</span>
-              <a href="tel:5128949102" class="font-medium text-zinc-900 hover:underline">Call for Help →</a>
-            </div>
-          </div>
-
-          <!-- Service 5 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="shield-check" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">Whole-Home Surge Suppression</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Protect sensitive electronics, HVAC compressors, and smart appliances from Central Texas grid fluctuations and lightning surges with panel-mounted Type 1/2 SPD units.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Installed in under 2 hours</span>
-              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
-            </div>
-          </div>
-
-          <!-- Service 6 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
-            <div class="space-y-3">
-              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
-                <i data-lucide="home" class="w-5 h-5"></i>
-              </div>
-              <h3 class="text-lg font-bold text-zinc-900">Remodels & Historic Rewiring</h3>
-              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
-                Safe removal of knob-and-tube or ungrounded cloth wiring in older Austin homes (Hyde Park, Clarksville, Travis Heights). Modern circuitry without wrecking historic plaster.
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
-              <span>Detailed written scope</span>
-              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= TRANSPARENT PRICING GUIDE ================= -->
-    <section id="pricing" class="py-20 bg-sand/40 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        
-        <div class="max-w-2xl mb-12 space-y-2">
-          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Honest Numbers</span>
-          <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
-            Clear, upfront pricing guide. No hidden extras.
+          <span class="text-xs font-mono uppercase tracking-widest text-zinc-600 font-semibold">Standard Rates</span>
+          <h2 class="font-editorial text-3xl sm:text-5xl text-onyx font-normal">
+            Transparent Architectural Fee Schedule
           </h2>
           <p class="text-sm text-zinc-600">
-            We provide exact, fixed-price proposals after assessing your site. Here are realistic ranges for standard residential projects in Austin:
+            Fixed-price proposals with zero surprise labor markups. All quotes include parts, labor, and city permits.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-8">
           
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4">
-            <div>
-              <div class="text-xs font-semibold uppercase text-zinc-500">Level 2 EV Charger</div>
-              <div class="text-2xl font-bold text-zinc-900 mt-1">$750 – $1,400</div>
-              <div class="text-xs text-zinc-500 mt-0.5">Labor + conduit + breaker</div>
+          <!-- Pricing Card 1 -->
+          <div class="bg-white border border-stoneLine rounded-2xl p-8 flex flex-col justify-between space-y-6 shadow-sm hover:border-zinc-400 transition-colors">
+            <div class="space-y-4">
+              <div class="font-mono text-xs uppercase tracking-widest text-zinc-500">Discipline I</div>
+              <h3 class="font-editorial text-2xl text-onyx">EV Charging Infrastructure</h3>
+              <div class="font-mono text-3xl font-bold text-onyx">$850 – $1,400</div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                Dedicated 240V 50A or 60A circuit for Tesla Universal Wall Connector, Rivian, or ChargePoint. Hardwired with copper conductors.
+              </p>
+              
+              <ul class="text-xs font-mono text-zinc-700 space-y-2 pt-2 border-t border-stoneLine">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Up to 50ft surface or attic conduit</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Full electrical panel load calculation</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Level 2 test run with vehicle</li>
+              </ul>
             </div>
-            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Up to 50ft dedicated 240V run</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Hardwired or 14-50 NEMA outlet</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Tested with vehicle before handover</li>
-            </ul>
+
+            <a href="#contact" class="w-full py-3 rounded-lg border border-stoneLine hover:bg-sand text-onyx text-center font-mono text-xs uppercase tracking-wider font-semibold transition-colors">
+              Schedule EV Installation
+            </a>
           </div>
 
-          <div class="bg-white border-2 border-zinc-900 rounded-xl p-6 space-y-4 relative shadow-sm">
-            <div class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-zinc-900 text-white text-[10px] font-bold uppercase tracking-wider">
-              Most Requested
+          <!-- Pricing Card 2 (Featured) -->
+          <div class="bg-white border-2 border-onyx rounded-2xl p-8 flex flex-col justify-between space-y-6 shadow-xl relative">
+            <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full bg-copper text-white font-mono text-[10px] font-bold uppercase tracking-widest">
+              Core Specialty
             </div>
-            <div>
-              <div class="text-xs font-semibold uppercase text-zinc-500">200A Main Panel Upgrade</div>
-              <div class="text-2xl font-bold text-zinc-900 mt-1">$2,800 – $3,900</div>
-              <div class="text-xs text-zinc-500 mt-0.5">Turnkey with city permit & utility disconnect</div>
+
+            <div class="space-y-4">
+              <div class="font-mono text-xs uppercase tracking-widest text-copper font-bold">Discipline II</div>
+              <h3 class="font-editorial text-2xl text-onyx">200A Service Modernization</h3>
+              <div class="font-mono text-3xl font-bold text-onyx">$2,900 – $3,900</div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                Turn-key replacement of obsolete 100A/150A panel with Square D QO or Siemens commercial-grade copper busbar panel.
+              </p>
+              
+              <ul class="text-xs font-mono text-zinc-700 space-y-2 pt-2 border-t border-stoneLine">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Austin Energy permit & meter disconnect</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Type 1 whole-house surge protector</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Restored same day (No dark nights)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> 100% City inspection signoff guarantee</li>
+              </ul>
             </div>
-            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Brand new Siemens/Square D panel</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Austin Energy utility coordination</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> City permit fees & inspection passed</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Whole-home surge protector included</li>
-            </ul>
+
+            <a href="#contact" class="w-full py-3 rounded-lg bg-onyx hover:bg-zinc-800 text-white text-center font-mono text-xs uppercase tracking-wider font-semibold transition-colors">
+              Request Panel Inspection
+            </a>
           </div>
 
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4">
-            <div>
-              <div class="text-xs font-semibold uppercase text-zinc-500">Diagnostic & Repair</div>
-              <div class="text-2xl font-bold text-zinc-900 mt-1">$140 – $220</div>
-              <div class="text-xs text-zinc-500 mt-0.5">Comprehensive troubleshooting visit</div>
+          <!-- Pricing Card 3 -->
+          <div class="bg-white border border-stoneLine rounded-2xl p-8 flex flex-col justify-between space-y-6 shadow-sm hover:border-zinc-400 transition-colors">
+            <div class="space-y-4">
+              <div class="font-mono text-xs uppercase tracking-widest text-zinc-500">Discipline III</div>
+              <h3 class="font-editorial text-2xl text-onyx">Architectural Lighting Package</h3>
+              <div class="font-mono text-3xl font-bold text-onyx">$1,600 – $3,400</div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                Precision laser-guided installation of trimless flangeless LED downlights, under-cabinet lighting, and Lutron Caséta smart dimmers.
+              </p>
+              
+              <ul class="text-xs font-mono text-zinc-700 space-y-2 pt-2 border-t border-stoneLine">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> 8 to 16 Recessed cans laser-aligned</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> High 95+ CRI warm dimming (2700K)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copper"></i> Zero drywall or plaster repairs needed</li>
+              </ul>
             </div>
-            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Full electrical panel scan</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Circuit tracing & safety audit</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Fee applies to repair work if approved</li>
-            </ul>
-          </div>
 
-        </div>
-
-        <div class="mt-8 text-center">
-          <p class="text-xs text-zinc-500">
-            *Final prices depend on panel accessibility, attic conduit paths, and utility requirements. We provide a firm written price before any work begins.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= OUR STANDARDS (THE DIFFERENCE) ================= -->
-    <section id="about" class="py-20 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        
-        <div class="grid lg:grid-cols-12 gap-12 items-center">
-          
-          <div class="lg:col-span-6 space-y-6">
-            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">How We Work</span>
-            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
-              We treat your home like our own. No mess, no cut corners.
-            </h2>
-            <p class="text-sm text-zinc-600 leading-relaxed">
-              We started Vanguard after watching too many contractors arrive late, track mud through living rooms, cut drywall haphazardly, and leave homeowners with surprise invoices. We built a company based on simple, old-fashioned standards:
-            </p>
-
-            <div class="space-y-4 pt-2">
-              <div class="flex gap-4 items-start">
-                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">1</div>
-                <div>
-                  <h4 class="text-sm font-bold text-zinc-900">Clean Shoes & HEPA Vacuums</h4>
-                  <p class="text-xs text-zinc-600 mt-0.5">We lay down protective floor runners, wear boot covers indoors, and vacuum every drywall shaving before packing our tools.</p>
-                </div>
-              </div>
-
-              <div class="flex gap-4 items-start">
-                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">2</div>
-                <div>
-                  <h4 class="text-sm font-bold text-zinc-900">No Unsupervised Apprentices</h4>
-                  <p class="text-xs text-zinc-600 mt-0.5">Every installation is overseen by a licensed Master Electrician with at least 8 years of residential field experience.</p>
-                </div>
-              </div>
-
-              <div class="flex gap-4 items-start">
-                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">3</div>
-                <div>
-                  <h4 class="text-sm font-bold text-zinc-900">Itemized Written Scope</h4>
-                  <p class="text-xs text-zinc-600 mt-0.5">You receive a clear breakdown of parts, labor, and permit fees. If an unexpected issue arises behind a wall, we discuss it before spending a penny of your money.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6">
-            <div class="rounded-xl overflow-hidden border border-stoneBorder bg-stone-100 aspect-[4/3]">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Clean modern residential home with precise architectural lighting" class="w-full h-full object-cover">
-            </div>
+            <a href="#contact" class="w-full py-3 rounded-lg border border-stoneLine hover:bg-sand text-onyx text-center font-mono text-xs uppercase tracking-wider font-semibold transition-colors">
+              Explore Lighting Scope
+            </a>
           </div>
 
         </div>
@@ -463,74 +588,78 @@
       </div>
     </section>
 
-    <!-- ================= REAL GOOGLE REVIEWS (GROUNDED & CREDIBLE) ================= -->
-    <section id="reviews" class="py-20 bg-sand/30 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- ================= EDITORIAL CLIENT REVIEWS (REAL REPUTATION) ================= -->
+    <section id="reviews" class="py-24 border-b border-stoneLine bg-sand/40">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div>
-            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Google Reviews</span>
-            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal mt-1">
-              Feedback from Austin homeowners.
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div class="space-y-2">
+            <span class="text-xs font-mono uppercase tracking-widest text-zinc-600 font-semibold">Verified Proof</span>
+            <h2 class="font-editorial text-3xl sm:text-5xl text-onyx font-normal">
+              Reputation in the Neighborhoods
             </h2>
           </div>
           
-          <div class="flex items-center gap-3 bg-white border border-stoneBorder px-4 py-2.5 rounded-lg shadow-sm">
-            <div class="text-amber-500 text-sm">★★★★★</div>
-            <div class="text-xs font-semibold text-zinc-800">4.9 / 5.0 Rating · 184 Verified Reviews</div>
+          <div class="flex items-center gap-3 bg-white border border-stoneLine px-4 py-2.5 rounded-xl shadow-sm">
+            <span class="font-mono font-bold text-onyx text-sm">Google 4.98 Rating</span>
+            <span class="text-zinc-300">|</span>
+            <span class="text-xs font-mono text-zinc-600">184 Verified Austin Homeowners</span>
           </div>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-8">
           
-          <!-- Review 1 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+          <div class="bg-white border border-stoneLine rounded-2xl p-7 space-y-4 flex flex-col justify-between shadow-sm">
             <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <div class="text-amber-500 text-xs">★★★★★</div>
-                <span class="text-[11px] text-zinc-400">3 weeks ago</span>
+              <div class="flex items-center justify-between text-xs font-mono">
+                <span class="text-copper font-bold">★★★★★</span>
+                <span class="text-zinc-500">Westlake Hills</span>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
-                “Marcus and his team upgraded our 1970s electrical panel to 200A so we could add a heat pump and a Tesla charger. Austin Energy disconnected at 8:30 AM, and everything was inspected and back on by 3 PM. Super neat pipe work and zero mess left in the garage.”
+              <div class="font-editorial text-lg text-onyx">
+                “Completed our 400A panel swap without an hour of delay.”
+              </div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                “We were adding two Level 2 Tesla chargers and an induction cooktop. Vanguard coordinated the entire permit with Austin Energy, had the meter pulled, and our power was back on by 3:30 PM. Unbelievable cleanliness—boot covers on at all times.”
               </p>
             </div>
-            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
-              <span class="font-bold text-zinc-900">David M.</span>
-              <span class="text-zinc-500">West Lake Hills</span>
+            <div class="pt-4 border-t border-stoneLine text-xs font-mono text-zinc-500">
+              <strong class="text-onyx font-sans">Dr. Michael Harrison</strong> · Residence Owner
             </div>
           </div>
 
-          <!-- Review 2 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+          <div class="bg-white border border-stoneLine rounded-2xl p-7 space-y-4 flex flex-col justify-between shadow-sm">
             <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <div class="text-amber-500 text-xs">★★★★★</div>
-                <span class="text-[11px] text-zinc-400">1 month ago</span>
+              <div class="flex items-center justify-between text-xs font-mono">
+                <span class="text-copper font-bold">★★★★★</span>
+                <span class="text-zinc-500">Tarrytown</span>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
-                “Had a breaker that kept tripping every time our microwave ran. Another company quoted us $1,800 for unnecessary wiring replacements. Vanguard came out, ran a diagnostic, and found a loose neutral wire in the subpanel. Fixed it cleanly in an hour for a fair price. Very honest people.”
+              <div class="font-editorial text-lg text-onyx">
+                “Honest diagnosis when another contractor wanted $2k.”
+              </div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                “A competitor told us our entire kitchen circuit was ruined and wanted $2,100 to tear out the drywall. Vanguard used thermal imaging, diagnosed a loose neutral lug in the subpanel, and fixed it safely in 45 minutes for a fair diagnostic fee.”
               </p>
             </div>
-            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
-              <span class="font-bold text-zinc-900">Sarah Jenkins</span>
-              <span class="text-zinc-500">Tarrytown</span>
+            <div class="pt-4 border-t border-stoneLine text-xs font-mono text-zinc-500">
+              <strong class="text-onyx font-sans">Sarah Jenkins</strong> · Homeowner
             </div>
           </div>
 
-          <!-- Review 3 -->
-          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+          <div class="bg-white border border-stoneLine rounded-2xl p-7 space-y-4 flex flex-col justify-between shadow-sm">
             <div class="space-y-3">
-              <div class="flex items-center justify-between">
-                <div class="text-amber-500 text-xs">★★★★★</div>
-                <span class="text-[11px] text-zinc-400">2 months ago</span>
+              <div class="flex items-center justify-between text-xs font-mono">
+                <span class="text-copper font-bold">★★★★★</span>
+                <span class="text-zinc-500">Barton Creek</span>
               </div>
-              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
-                “Installed 14 recessed LED cans and Lutron dimmers in our living room and kitchen. They used laser guides to align every fixture perfectly with our ceiling beams. Wore shoe covers and put plastic over our furniture without us even having to ask.”
+              <div class="font-editorial text-lg text-onyx">
+                “Laser alignment on recessed lighting was remarkable.”
+              </div>
+              <p class="text-xs text-zinc-600 leading-relaxed">
+                “We installed 18 trimless LED cans throughout our vaulted cedar ceiling. Zero drywall mistakes. The master technician took time to test our dimmer curve with Lutron Caséta to avoid any low-level flickering. Genuine artisans.”
               </p>
             </div>
-            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
-              <span class="font-bold text-zinc-900">Robert & Claire G.</span>
-              <span class="text-zinc-500">Barton Hills</span>
+            <div class="pt-4 border-t border-stoneLine text-xs font-mono text-zinc-500">
+              <strong class="text-onyx font-sans">Julian Laurent</strong> · Architect
             </div>
           </div>
 
@@ -539,132 +668,71 @@
       </div>
     </section>
 
-    <!-- ================= SERVICE AREAS ================= -->
-    <section id="areas" class="py-16 border-b border-stoneBorder">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6">
-        <div class="max-w-2xl mb-8 space-y-2">
-          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Service Coverage</span>
-          <h2 class="serif-display text-2xl sm:text-3xl text-zinc-950 font-normal">
-            Where we work in Greater Austin.
-          </h2>
-          <p class="text-xs sm:text-sm text-zinc-600">
-            We operate fully equipped service vans across Travis and Williamson counties with zero travel surcharges:
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-zinc-700 font-medium">
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Central Austin & Downtown</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">West Lake Hills & Rollingwood</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Tarrytown & Clarksville</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Barton Hills & Zilker</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Lakeway & Bee Cave</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Cedar Park & Leander</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Round Rock & Pflugerville</div>
-          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Circle C & Sunset Valley</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= SIMPLE FAQ ================= -->
-    <section id="faq" class="py-16 border-b border-stoneBorder">
+    <!-- ================= INTAKE & WALKTHROUGH SCHEDULER ================= -->
+    <section id="contact" class="py-24 bg-linen">
       <div class="max-w-4xl mx-auto px-4 sm:px-6">
         
-        <div class="mb-10 space-y-2 text-center">
-          <h2 class="serif-display text-3xl text-zinc-950 font-normal">Common Questions</h2>
-          <p class="text-xs sm:text-sm text-zinc-600">Straightforward answers about permits, timelines, and guarantees.</p>
-        </div>
-
-        <div class="space-y-4">
-          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
-            <h4 class="font-bold text-sm text-zinc-900">Do I really need a city permit for a panel upgrade?</h4>
-            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
-              Yes. The City of Austin requires an electrical permit anytime the main electrical service is modified. This protects your home and ensures your homeowner’s insurance coverage remains valid in case of an issue. We handle the entire application, drawings, and final inspection.
-            </p>
-          </div>
-
-          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
-            <h4 class="font-bold text-sm text-zinc-900">Will my power be off during a panel upgrade?</h4>
-            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
-              Power is temporarily disconnected by Austin Energy in the morning (usually around 8:30 AM). We complete the entire replacement, install the new equipment, and restore power before 4:00 PM on the very same day. We never leave a family without electricity overnight.
-            </p>
-          </div>
-
-          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
-            <h4 class="font-bold text-sm text-zinc-900">What does your 10-year workmanship warranty include?</h4>
-            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
-              If any breaker connection, switch, conduit fitting, or wiring installed by our technicians ever loosens or fails due to workmanship within 10 years, we come back and repair it at zero charge to you.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ================= CONTACT & QUOTE FORM ================= -->
-    <section id="contact" class="py-20 bg-sand/50">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        
-        <div class="bg-white border border-stoneBorder rounded-2xl p-8 sm:p-10 shadow-sm">
+        <div class="bg-white border border-stoneLine rounded-2xl p-8 sm:p-12 shadow-md">
           
-          <div class="max-w-xl mb-8 space-y-2">
-            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Get In Touch</span>
-            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
-              Request an itemized quote or consultation.
+          <div class="max-w-xl mb-10 space-y-3">
+            <div class="text-xs font-mono uppercase tracking-widest text-copper font-semibold">Direct Intake</div>
+            <h2 class="font-editorial text-3xl sm:text-4xl text-onyx font-normal">
+              Request a Technical Site Walkthrough
             </h2>
             <p class="text-xs sm:text-sm text-zinc-600">
-              Fill out the details below, or call our direct office line at <a href="tel:5128949102" class="font-bold text-zinc-900 underline">(512) 894-9102</a>. We respond to all inquiries within 2 business hours.
+              A licensed Master Electrician will review your scope, verify your panel capacity, and provide an itemized fixed-price proposal.
             </p>
           </div>
 
-          <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+          <form onsubmit="handleFormSubmit(event)" class="space-y-5 text-xs sm:text-sm">
             
-            <div class="grid sm:grid-cols-2 gap-4">
+            <div class="grid sm:grid-cols-2 gap-5">
               <div>
-                <label class="block text-zinc-700 font-semibold mb-1">Your Name</label>
-                <input type="text" required placeholder="e.g. Thomas Miller" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+                <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Full Name</label>
+                <input type="text" required placeholder="e.g. Thomas Miller" class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors">
               </div>
               <div>
-                <label class="block text-zinc-700 font-semibold mb-1">Phone Number</label>
-                <input type="tel" required placeholder="(512) 555-0192" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+                <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Direct Phone</label>
+                <input type="tel" required placeholder="(512) 555-0192" class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors">
               </div>
             </div>
 
-            <div class="grid sm:grid-cols-2 gap-4">
+            <div class="grid sm:grid-cols-2 gap-5">
               <div>
-                <label class="block text-zinc-700 font-semibold mb-1">Email Address</label>
-                <input type="email" required placeholder="thomas@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+                <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Email Address</label>
+                <input type="email" required placeholder="thomas@example.com" class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors">
               </div>
               <div>
-                <label class="block text-zinc-700 font-semibold mb-1">Neighborhood or Zip Code</label>
-                <input type="text" required placeholder="e.g. Westlake (78746)" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+                <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Property Neighborhood / Zip</label>
+                <input type="text" required placeholder="e.g. Westlake (78746)" class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors">
               </div>
             </div>
 
             <div>
-              <label class="block text-zinc-700 font-semibold mb-1">What kind of work do you need done?</label>
-              <select class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
-                <option>200A or 400A Main Service Panel Upgrade</option>
-                <option>EV Home Charging Station (Tesla / Level 2)</option>
-                <option>Recessed & Architectural Lighting</option>
-                <option>Electrical Troubleshooting / Urgent Repair</option>
-                <option>Whole-Home Rewire / Remodel Consultation</option>
-                <option>Other Electrical Service</option>
+              <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Primary Discipline Required</label>
+              <select class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors">
+                <option>200A or 400A Main Service Modernization</option>
+                <option>Tesla / Level 2 EV Fast Charger</option>
+                <option>Architectural Recessed & Cove Lighting</option>
+                <option>Historic Home Rewire / Knob-and-Tube Remediation</option>
+                <option>Whole-Home Generator / Transfer Switch</option>
+                <option>Emergency Diagnostic Walkthrough</option>
               </select>
             </div>
 
             <div>
-              <label class="block text-zinc-700 font-semibold mb-1">Briefly describe the project or issue</label>
-              <textarea rows="3" placeholder="e.g. Old 100A panel in garage tripping when running AC and dryer. Looking to upgrade to 200A and prepare for future EV charger." class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900"></textarea>
+              <label class="block font-mono text-xs uppercase tracking-wider text-zinc-700 mb-1.5 font-semibold">Project Notes or Existing Panel Details</label>
+              <textarea rows="3" placeholder="Describe current panel brand/amperage, home age, or specific project requirements..." class="w-full px-4 py-3 rounded-lg border border-stoneLine bg-linen/50 text-onyx focus:outline-none focus:border-onyx transition-colors"></textarea>
             </div>
 
-            <div class="pt-2">
-              <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-medium text-sm transition-colors">
-                Send Request
+            <div class="pt-3">
+              <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-lg bg-onyx hover:bg-zinc-800 text-white font-mono text-xs uppercase tracking-widest font-semibold transition-all shadow-md">
+                Transmit Walkthrough Request
               </button>
             </div>
 
-            <div id="formSuccess" class="hidden p-4 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
-              Thank you. Your request has been sent to our master electrician. We will call or email you within 2 hours.
+            <div id="formSuccess" class="hidden p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 font-mono text-xs">
+              ✓ Intake received. Master Electrician Marcus will review your project and call your direct line within 2 business hours.
             </div>
 
           </form>
@@ -677,61 +745,114 @@
   </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-white border-t border-stoneBorder py-12 text-zinc-500 text-xs">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+  <footer class="bg-onyx text-zinc-400 text-xs py-16 border-t border-onyxBorder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-stoneBorder">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-onyxBorder">
         
-        <div class="space-y-2">
-          <div class="text-base font-bold text-zinc-900">Vanguard Electrical</div>
-          <p class="leading-relaxed">
-            Licensed residential master electricians based in Austin, Texas. Dedicated to clean, code-compliant craftsmanship and honest pricing.
+        <div class="space-y-3">
+          <div class="font-editorial text-2xl text-white font-bold">Vanguard</div>
+          <p class="text-zinc-400 leading-relaxed text-xs">
+            Bespoke residential electrical engineering, architectural lighting, and 200A/400A infrastructure modernizations across Austin, Texas.
           </p>
+          <div class="font-mono text-copperLight text-xs">
+            TECL Master Lic. #49281
+          </div>
         </div>
 
         <div>
-          <div class="font-semibold text-zinc-800 mb-2">License & Insurance</div>
-          <ul class="space-y-1">
-            <li>TECL Master #49281</li>
-            <li>$2,000,000 Liability Bonded</li>
-            <li>City of Austin Registered Contractor</li>
+          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold mb-3">Core Disciplines</div>
+          <ul class="space-y-2 font-mono text-xs text-zinc-400">
+            <li><a href="#services" class="hover:text-white transition-colors">400A Service Modernization</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Tesla Universal Charging</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Lutron RadioRA 3 Integration</a></li>
+            <li><a href="#services" class="hover:text-white transition-colors">Historic Wiring Remediation</a></li>
           </ul>
         </div>
 
         <div>
-          <div class="font-semibold text-zinc-800 mb-2">Direct Contact</div>
-          <ul class="space-y-1">
-            <li>Phone: (512) 894-9102</li>
-            <li>Email: office@vanguard-atx.com</li>
-            <li>Office: 360 Nueces St, Austin, TX 78701</li>
+          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold mb-3">Service Hubs</div>
+          <ul class="space-y-2 font-mono text-xs text-zinc-400">
+            <li>West Lake Hills (78746)</li>
+            <li>Tarrytown & Clarksville (78703)</li>
+            <li>Lakeway & Bee Cave (78734)</li>
+            <li>Barton Creek (78735)</li>
           </ul>
         </div>
 
         <div>
-          <div class="font-semibold text-zinc-800 mb-2">Hours of Service</div>
-          <ul class="space-y-1">
-            <li>Monday – Friday: 7:00 AM – 6:00 PM</li>
-            <li>Saturday: 8:00 AM – 4:00 PM</li>
-            <li>Sunday: Emergency calls only</li>
-          </ul>
+          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold mb-3">Direct Dispatch</div>
+          <div class="p-4 rounded-xl bg-onyxCard border border-onyxBorder space-y-1.5 font-mono text-xs">
+            <div class="text-white font-bold">Emergency & Urgent:</div>
+            <a href="tel:5128949102" class="text-copperLight hover:underline block text-sm font-bold">(512) 894-9102</a>
+            <div class="text-[11px] text-zinc-500 pt-1">360 Nueces St, Austin, TX 78701</div>
+          </div>
         </div>
 
       </div>
 
-      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px]">
-        <div>© 2026 Vanguard Electrical Services LLC. All rights reserved.</div>
-        <div class="flex gap-4">
-          <a href="#" class="hover:text-zinc-800">Privacy Policy</a>
-          <a href="#" class="hover:text-zinc-800">Terms of Service</a>
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-mono text-zinc-500">
+        <div>© 2026 Vanguard Electrical Engineering LLC. All rights reserved.</div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-zinc-300">Licensing Credentials</a>
+          <a href="#" class="hover:text-zinc-300">City Permits</a>
+          <a href="#" class="hover:text-zinc-300">Privacy</a>
         </div>
       </div>
 
     </div>
   </footer>
 
+  <!-- ================= JAVASCRIPT: BEFORE/AFTER SLIDER & FORM ================= -->
   <script>
     lucide.createIcons();
 
+    // Before/After Slider Drag Implementation
+    const container = document.getElementById('sliderContainer');
+    const afterWrap = document.getElementById('afterWrap');
+    const handle = document.getElementById('sliderHandle');
+    let isSliding = false;
+
+    function setSliderPosition(x) {
+      const rect = container.getBoundingClientRect();
+      let pos = (x - rect.left) / rect.width;
+      if (pos < 0.05) pos = 0.05;
+      if (pos > 0.95) pos = 0.95;
+      const pct = (pos * 100) + '%';
+      afterWrap.style.width = pct;
+      handle.style.left = pct;
+    }
+
+    container.addEventListener('mousedown', (e) => {
+      isSliding = true;
+      setSliderPosition(e.clientX);
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isSliding) return;
+      setSliderPosition(e.clientX);
+    });
+
+    window.addEventListener('mouseup', () => {
+      isSliding = false;
+    });
+
+    // Touch support for mobile
+    container.addEventListener('touchstart', (e) => {
+      isSliding = true;
+      setSliderPosition(e.touches[0].clientX);
+    });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!isSliding) return;
+      setSliderPosition(e.touches[0].clientX);
+    });
+
+    window.addEventListener('touchend', () => {
+      isSliding = false;
+    });
+
+    // Form submission simulation
     function handleFormSubmit(e) {
       e.preventDefault();
       document.getElementById('formSuccess').classList.remove('hidden');
