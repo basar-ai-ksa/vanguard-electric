@@ -3,50 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanguard Electric & Controls | Master Electricians & Architectural Systems · Austin, TX</title>
-  <meta name="description" content="Austin's premier master electricians specializing in architectural lighting, 200A/400A panel upgrades, EV infrastructure, and 24/7 emergency dispatch.">
+  <title>Vanguard Electrical | Master Electricians · Austin, TX</title>
+  <meta name="description" content="Licensed master electricians in Austin, TX. Specializing in panel upgrades, EV chargers, lighting installation, and residential rewiring. Honest pricing and clean workmanship.">
   
-  <!-- Open Graph Meta -->
-  <meta property="og:title" content="Vanguard Electric & Controls | Master Electricians">
-  <meta property="og:description" content="Architectural electrical craftsmanship, smart home systems, and 24/7 emergency dispatch across Austin & Hill Country.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Vanguard Electrical | Licensed Master Electricians in Austin, TX">
+  <meta property="og:description" content="Quality electrical work for homes and small businesses in Austin. Clear upfront pricing, tidy technicians, and fully permitted installations.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#07090E">
+  <meta name="theme-color" content="#FAFAF7">
 
-  <!-- Favicon (Inline SVG Lightning Emblem) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23F59E0B'><polygon points='13 2 3 14 12 14 11 22 21 10 12 10 13 2'/></svg>">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327272A' stroke-width='2'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
 
-  <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <!-- Fonts: Instrument Serif (Editorial human warmth) & Plus Jakarta Sans (Clean, high-legibility sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"Space Grotesk"', 'monospace'],
+            serif: ['"Instrument Serif"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
           },
           colors: {
-            vanguard: {
-              950: '#06080E',
-              900: '#0B0F19',
-              850: '#111726',
-              800: '#172033',
-              700: '#23304B',
-              amber: '#F59E0B',
-              gold: '#FBBF24',
-              cyan: '#38BDF8'
-            }
-          },
-          boxShadow: {
-            'glow-amber': '0 0 25px -5px rgba(245, 158, 11, 0.35)',
-            'glow-cyan': '0 0 25px -5px rgba(56, 189, 248, 0.35)',
-            'card': '0 8px 30px rgba(0, 0, 0, 0.45)',
+            canvas: '#FBFBFA',
+            sand: '#F4F4F0',
+            stoneBorder: '#E5E5DF',
+            charcoal: '#18181B',
+            mutedZinc: '#71717A',
+            warmBrown: '#854D0E',
+            forest: '#1E3A2F'
           }
         }
       }
@@ -56,1519 +47,697 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Schema.org JSON-LD LocalBusiness -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Electrician",
-    "name": "Vanguard Electric & Controls",
-    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-    "telephone": "+1-512-894-9102",
-    "email": "dispatch@vanguardelectric.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "360 Nueces St, Suite 400",
-      "addressLocality": "Austin",
-      "addressRegion": "TX",
-      "postalCode": "78701",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 30.2672,
-      "longitude": -97.7431
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.98",
-      "reviewCount": "184"
-    },
-    "priceRange": "$$"
-  }
-  </script>
-
   <style>
     body {
-      background-color: #06080E;
-      color: #F1F5F9;
+      background-color: #FBFBFA;
+      color: #18181B;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
     }
-
-    /* Custom subtle glow gradients */
-    .bg-radial-amber {
-      background: radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.15) 0%, transparent 60%);
-    }
-
-    .bg-radial-spot {
-      background: radial-gradient(circle at center, rgba(56, 189, 248, 0.08) 0%, transparent 70%);
-    }
-
-    /* Glassmorphic border */
-    .glass-border {
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    
-    .glass-border-amber {
-      border: 1px solid rgba(245, 158, 11, 0.25);
-    }
-
-    /* Smooth range slider track */
-    input[type=range] {
-      -webkit-appearance: none;
-      background: #1e293b;
-      border-radius: 8px;
-      height: 8px;
-    }
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      height: 22px;
-      width: 22px;
-      border-radius: 50%;
-      background: #f59e0b;
-      cursor: pointer;
-      box-shadow: 0 0 12px rgba(245, 158, 11, 0.8);
-      border: 2px solid #ffffff;
-    }
-
-    /* Pulse animation */
-    @keyframes subtle-pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.6; transform: scale(0.95); }
-    }
-    .status-pulse {
-      animation: subtle-pulse 2s infinite ease-in-out;
+    .serif-display {
+      font-family: 'Instrument Serif', Georgia, serif;
     }
   </style>
 </head>
-<body class="selection:bg-amber-500/30 selection:text-amber-200">
+<body class="selection:bg-amber-100 selection:text-amber-900">
 
-  <!-- ================= TOP NOTIFICATION / DISPATCH BAR ================= -->
-  <div class="border-b border-white/5 bg-vanguard-950/90 text-xs py-2 px-4 sticky top-0 z-50 backdrop-blur-md">
-    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono font-medium">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 status-pulse"></span>
-          LIVE DISPATCH ACTIVE
-        </span>
-        <span class="text-slate-400 hidden sm:inline">2 Master Units On Patrol in Austin Metro · Avg Dispatch: <strong class="text-slate-200 font-mono">22 mins</strong></span>
+  <!-- ================= QUIET TRUST TOP BAR ================= -->
+  <div class="border-b border-stoneBorder bg-sand/60 text-xs py-2 px-4 text-zinc-600">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-4">
+        <span class="font-medium text-zinc-800">Austin, Texas & Surrounding Areas</span>
+        <span class="text-zinc-300">|</span>
+        <span>Texas Master Electrical License #49281</span>
+        <span class="text-zinc-300 hidden sm:inline">|</span>
+        <span class="hidden sm:inline">Fully Bonded & Insured ($2M Liability)</span>
       </div>
-
-      <div class="flex items-center gap-5 text-slate-300">
-        <div class="hidden md:flex items-center gap-2 text-slate-400">
-          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-amber-400"></i>
-          <span>TX Master Lic. #49281 · $5M Commercial Liability</span>
-        </div>
-        <a href="tel:5128949102" class="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 font-mono font-semibold transition-colors">
-          <i data-lucide="phone-call" class="w-3.5 h-3.5 animate-bounce"></i>
-          <span>(512) 894-9102</span>
-          <span class="bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[10px] px-1.5 py-0.2 rounded uppercase">24/7 Urgent</span>
+      <div class="flex items-center gap-4 font-medium">
+        <span class="text-zinc-500">Mon–Sat: 7:00 AM – 6:00 PM</span>
+        <span class="text-zinc-300">|</span>
+        <a href="tel:5128949102" class="text-zinc-900 font-bold hover:text-amber-800 transition-colors">
+          Call (512) 894-9102
         </a>
       </div>
     </div>
   </div>
 
-  <!-- ================= FLOATING GLASS HEADER / NAVIGATION ================= -->
-  <nav class="sticky top-9 z-40 bg-vanguard-900/80 backdrop-blur-xl border-b border-white/5 transition-all">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <!-- ================= CLEAN EDITORIAL HEADER ================= -->
+  <header class="border-b border-stoneBorder bg-canvas sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
       
-      <!-- Brand Logo -->
-      <a href="#top" class="flex items-center gap-3 group">
-        <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-yellow-600 p-[1px] shadow-glow-amber">
-          <div class="w-full h-full bg-vanguard-950 rounded-[11px] flex items-center justify-center group-hover:bg-vanguard-900 transition-colors">
-            <svg class="w-6 h-6 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-            </svg>
-          </div>
-        </div>
-        <div class="flex flex-col">
-          <span class="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-            VANGUARD
-            <span class="text-amber-400 text-sm font-mono font-normal">ELECTRIC</span>
-          </span>
-          <span class="text-[10px] font-mono tracking-widest text-slate-400 uppercase">Master Electricians · Est. 2012</span>
-        </div>
+      <!-- Brand Name -->
+      <a href="#top" class="flex flex-col">
+        <span class="text-2xl font-bold tracking-tight text-zinc-900">Vanguard</span>
+        <span class="text-[11px] tracking-wider uppercase text-zinc-500 font-medium -mt-1">Electrical Services · Austin</span>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
-        <a href="#lighting-demo" class="hover:text-amber-400 transition-colors flex items-center gap-1.5">
-          <span>Architectural Lighting</span>
-          <span class="text-[10px] bg-amber-500/10 text-amber-300 px-1.5 py-0.5 rounded border border-amber-500/30">Interactive</span>
-        </a>
-        <a href="#calculator" class="hover:text-amber-400 transition-colors">Instant Estimate</a>
-        <a href="#reviews" class="hover:text-amber-400 transition-colors flex items-center gap-1">
-          <span>Reviews</span>
-          <span class="text-xs text-amber-400 font-mono">★ 4.98</span>
-        </a>
-        <a href="#service-area" class="hover:text-amber-400 transition-colors">Coverage</a>
-        <a href="#faq" class="hover:text-amber-400 transition-colors">FAQ</a>
-      </div>
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-zinc-600">
+        <a href="#services" class="hover:text-zinc-900 transition-colors">Services</a>
+        <a href="#pricing" class="hover:text-zinc-900 transition-colors">Pricing & Estimates</a>
+        <a href="#about" class="hover:text-zinc-900 transition-colors">Our Standards</a>
+        <a href="#reviews" class="hover:text-zinc-900 transition-colors">Client Reviews</a>
+        <a href="#areas" class="hover:text-zinc-900 transition-colors">Service Areas</a>
+        <a href="#faq" class="hover:text-zinc-900 transition-colors">FAQ</a>
+      </nav>
 
-      <!-- Action Button & Mobile Toggle -->
+      <!-- Primary Action -->
       <div class="flex items-center gap-3">
-        <button onclick="openBookingModal('General Consultation')" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs sm:text-sm font-medium rounded-xl group bg-gradient-to-br from-amber-400 to-yellow-600 group-hover:from-amber-400 group-hover:to-yellow-500 hover:text-white shadow-glow-amber transition-all">
-          <span class="relative px-4 py-2 sm:px-5 sm:py-2.5 transition-all ease-in duration-75 bg-vanguard-950 rounded-[10px] group-hover:bg-opacity-0 font-semibold text-white flex items-center gap-2">
-            <i data-lucide="calendar-check" class="w-4 h-4 text-amber-400 group-hover:text-white transition-colors"></i>
-            <span>Schedule Diagnostic</span>
-          </span>
-        </button>
-
-        <button id="mobileMenuBtn" class="lg:hidden p-2 text-slate-400 hover:text-white" aria-label="Open Menu">
-          <i data-lucide="menu" class="w-6 h-6"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Navigation Drawer -->
-    <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-vanguard-950 px-6 py-6 space-y-4">
-      <a href="#services" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">Services & Bento Grid</a>
-      <a href="#lighting-demo" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">Architectural Lighting Demo</a>
-      <a href="#calculator" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">Instant Cost Calculator</a>
-      <a href="#reviews" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">Google Verified Reviews</a>
-      <a href="#service-area" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">Service Coverage Map</a>
-      <a href="#faq" class="block text-slate-200 hover:text-amber-400 py-1" onclick="toggleMobileMenu()">FAQ</a>
-      <div class="pt-4 border-t border-white/10">
-        <a href="tel:5128949102" class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-amber-500 text-vanguard-950 font-bold">
-          <i data-lucide="phone-call" class="w-4 h-4"></i>
-          Call 24/7 Dispatch (512) 894-9102
+        <a href="tel:5128949102" class="hidden sm:flex items-center gap-2 text-sm font-semibold text-zinc-800 hover:text-zinc-900 px-3 py-2">
+          <i data-lucide="phone" class="w-4 h-4 text-zinc-600"></i>
+          <span>(512) 894-9102</span>
+        </a>
+        <a href="#contact" class="px-4 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white text-sm font-medium transition-colors">
+          Request a Quote
         </a>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- ================= HERO SECTION ================= -->
-  <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-radial-amber">
-    <!-- Subtle background grid lines -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f29370f_1px,transparent_1px),linear-gradient(to_bottom,#1f29370f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none"></div>
-
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      
-      <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+  <main id="top">
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section class="pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <!-- Left Hero Copy -->
-        <div class="lg:col-span-7 space-y-6">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
           
-          <!-- Trust Pill -->
-          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-vanguard-850/90 border border-amber-500/20 shadow-sm backdrop-blur-md">
-            <!-- Google Multi-color Logo SVG -->
-            <svg class="w-4 h-4" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-            </svg>
-            <div class="flex items-center gap-1 text-amber-400 font-mono text-xs font-semibold">
-              <span>★★★★★</span>
-              <span class="text-white ml-1">4.98 Rating</span>
-              <span class="text-slate-400 font-normal hidden sm:inline">(184 Google Reviews)</span>
-            </div>
-            <span class="w-1 h-1 rounded-full bg-slate-600"></span>
-            <span class="text-slate-300 text-xs font-medium">Austin’s #1 Rated Master Electricians</span>
-          </div>
-
-          <!-- Headline -->
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-            Architectural Electrical Craftsmanship. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500">
-              Zero Compromise.
-            </span>
-          </h1>
-
-          <!-- Subtitle -->
-          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
-            From seamless 200A/400A service panel modernizations and invisible Lutron architectural lighting to 24/7 emergency restoration for luxury estates across Austin, Westlake, and Lakeway.
-          </p>
-
-          <!-- CTAs -->
-          <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-            <a href="#calculator" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-vanguard-950 font-bold text-base shadow-glow-amber transition-all transform hover:-translate-y-0.5">
-              <i data-lucide="calculator" class="w-5 h-5"></i>
-              <span>Instant Cost Calculator</span>
-            </a>
-
-            <a href="tel:5128949102" class="inline-flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-vanguard-850 hover:bg-vanguard-800 border border-white/10 hover:border-amber-500/40 text-slate-200 hover:text-white font-medium text-base transition-all group">
-              <span class="w-2.5 h-2.5 rounded-full bg-red-500 status-pulse"></span>
-              <div class="text-left">
-                <div class="text-[10px] text-slate-400 font-mono uppercase tracking-wider">Emergency Dispatch</div>
-                <div class="font-mono font-bold text-amber-400 group-hover:text-amber-300">(512) 894-9102</div>
-              </div>
-            </a>
-          </div>
-
-          <!-- Trust Badges Bar -->
-          <div class="pt-6 border-t border-white/5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
-            <div class="flex items-center gap-2 text-slate-300">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
-              <span>Master Electrician on Every Job</span>
-            </div>
-            <div class="flex items-center gap-2 text-slate-300">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
-              <span>$5M Commercial Insurance</span>
-            </div>
-            <div class="flex items-center gap-2 text-slate-300">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
-              <span>Lifetime Craftsmanship Warranty</span>
-            </div>
-            <div class="flex items-center gap-2 text-slate-300">
-              <i data-lucide="check-circle-2" class="w-4 h-4 text-amber-400 flex-shrink-0"></i>
-              <span>100% Upfront Binding Quotes</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Right Hero Interactive Showcase: Architectural Home Lighting Simulator -->
-        <div class="lg:col-span-5">
-          <div class="relative rounded-2xl bg-vanguard-900 border border-white/10 p-4 sm:p-5 shadow-2xl overflow-hidden group">
+          <!-- Text Column (7 cols) -->
+          <div class="lg:col-span-7 space-y-6">
             
-            <!-- Header bar of simulator -->
-            <div class="flex items-center justify-between pb-3 mb-3 border-b border-white/5 text-xs font-mono">
-              <div class="flex items-center gap-2 text-slate-300">
-                <i data-lucide="sliders" class="w-4 h-4 text-amber-400"></i>
-                <span class="font-bold">LIGHTING AMBIENCE SIMULATOR</span>
-              </div>
-              <span id="lightingSceneTag" class="text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/30">2700K Architectural Warmth</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sand border border-stoneBorder text-xs text-zinc-700 font-medium">
+              <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+              <span>Available for scheduled appointments & urgent calls</span>
             </div>
 
-            <!-- Image Viewport with Dynamic Light Overlay -->
-            <div class="relative rounded-xl overflow-hidden aspect-[4/3] bg-slate-950">
-              <img id="sceneImage" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Architectural Modern Home Lighting" class="w-full h-full object-cover transition-all duration-700">
-              
-              <!-- Dynamic Lighting Gradient Overlays controlled by JS -->
-              <div id="lightingOverlay" class="absolute inset-0 bg-amber-600/20 mix-blend-color-dodge transition-opacity duration-700 pointer-events-none"></div>
-              <div id="vignetteOverlay" class="absolute inset-0 bg-gradient-to-t from-vanguard-950/90 via-transparent to-black/30 pointer-events-none"></div>
+            <h1 class="serif-display text-4xl sm:text-6xl text-zinc-950 font-normal leading-[1.08] tracking-tight">
+              Honest, precise electrical work. Done right the first time.
+            </h1>
 
-              <!-- Floating Live HUD Pills inside image -->
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none text-xs font-mono">
-                <div class="bg-vanguard-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 flex items-center gap-2">
-                  <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-                  <span id="hudKelvin" class="text-amber-300 font-bold">2,700K Warm Dim</span>
-                </div>
-                <div class="bg-vanguard-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10 flex items-center gap-2">
-                  <i data-lucide="zap" class="w-3.5 h-3.5 text-cyan-400"></i>
-                  <span id="hudEfficiency" class="text-cyan-300 font-bold">94% High CRI</span>
-                </div>
-              </div>
+            <p class="text-base sm:text-lg text-zinc-600 leading-relaxed max-w-xl">
+              From 200A service panel modernizations and EV charger installations to recessed lighting and whole-home troubleshooting. No sales pressure, no surprise bills—just licensed master electricians who treat your home with respect.
+            </p>
+
+            <!-- Actions -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="#contact" class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-medium text-sm transition-colors">
+                Request an Itemized Quote
+              </a>
+              <a href="tel:5128949102" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-white hover:bg-sand border border-stoneBorder text-zinc-900 font-medium text-sm transition-colors">
+                <i data-lucide="phone-call" class="w-4 h-4 text-zinc-700"></i>
+                <span>Direct Line: (512) 894-9102</span>
+              </a>
             </div>
 
-            <!-- Scene Selector Buttons -->
-            <div class="mt-4 space-y-2">
-              <div class="text-[11px] font-mono text-slate-400 uppercase tracking-wider flex justify-between">
-                <span>Select Architectural Scene:</span>
-                <span class="text-amber-400">Click to preview</span>
+            <!-- Authentic Trust Points -->
+            <div class="pt-6 border-t border-stoneBorder grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-zinc-600">
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
+                <span>Written, binding quotes</span>
               </div>
-              <div class="grid grid-cols-3 gap-2">
-                <button onclick="setLightingScene('sunset')" id="btn-sunset" class="scene-btn py-2 px-2.5 rounded-lg bg-vanguard-850 hover:bg-vanguard-800 border border-white/5 text-[11px] font-medium text-slate-300 transition-all flex flex-col items-center gap-1">
-                  <i data-lucide="sunset" class="w-4 h-4 text-orange-400"></i>
-                  <span>Dusk Natural</span>
-                </button>
-
-                <button onclick="setLightingScene('warm')" id="btn-warm" class="scene-btn py-2 px-2.5 rounded-lg bg-amber-500/20 border border-amber-500/40 text-[11px] font-medium text-amber-300 transition-all flex flex-col items-center gap-1 shadow-glow-amber">
-                  <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
-                  <span>Lutron 2700K</span>
-                </button>
-
-                <button onclick="setLightingScene('security')" id="btn-security" class="scene-btn py-2 px-2.5 rounded-lg bg-vanguard-850 hover:bg-vanguard-800 border border-white/5 text-[11px] font-medium text-slate-300 transition-all flex flex-col items-center gap-1">
-                  <i data-lucide="shield-alert" class="w-4 h-4 text-cyan-400"></i>
-                  <span>High Lumens</span>
-                </button>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
+                <span>Permitted with Austin Energy</span>
               </div>
-            </div>
-
-            <div class="mt-3 pt-3 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
-              <span class="flex items-center gap-1.5">
-                <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
-                Certified Lutron Caséta & Ketra Specialists
-              </span>
-              <a href="#lighting-demo" class="text-amber-400 hover:underline">View Portfolio →</a>
+              <div class="flex items-center gap-2">
+                <i data-lucide="check" class="w-4 h-4 text-zinc-900 flex-shrink-0"></i>
+                <span>Shoe covers & clean work site</span>
+              </div>
             </div>
 
           </div>
+
+          <!-- Image Column (5 cols) -->
+          <div class="lg:col-span-5">
+            <div class="relative">
+              <div class="rounded-xl overflow-hidden border border-stoneBorder shadow-sm bg-stone-100 aspect-[4/5]">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Licensed electrician performing neat wiring on service panel" class="w-full h-full object-cover">
+              </div>
+
+              <!-- Quiet Credibility Card -->
+              <div class="absolute -bottom-6 -left-6 bg-white border border-stoneBorder rounded-xl p-4 shadow-md max-w-[280px] hidden sm:block">
+                <div class="flex items-center gap-2 mb-1.5">
+                  <div class="flex text-amber-500 text-xs">★★★★★</div>
+                  <span class="text-xs font-bold text-zinc-900">4.9 / 5.0</span>
+                </div>
+                <p class="text-xs text-zinc-600 leading-snug">
+                  “Arrived on time, gave an honest written quote, and finished our panel upgrade in one afternoon.”
+                </p>
+                <div class="text-[10px] text-zinc-400 mt-2 font-medium">Verified Google Review · Westlake</div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ================= PROOF STRIP ================= -->
+    <section class="py-6 bg-sand/60 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="text-2xl font-bold text-zinc-900">12+ Years</div>
+            <div class="text-xs text-zinc-500 mt-0.5">Serving Austin & Travis County</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-zinc-900">184 Reviews</div>
+            <div class="text-xs text-zinc-500 mt-0.5">4.9 Star Google Rating</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-zinc-900">100% Permitted</div>
+            <div class="text-xs text-zinc-500 mt-0.5">Full City Inspection Signoff</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-zinc-900">10-Year Warranty</div>
+            <div class="text-xs text-zinc-500 mt-0.5">On All Panel & Wiring Work</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- ================= KEY STATS BAR ================= -->
-  <section class="border-y border-white/5 bg-vanguard-900/50 py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center divide-y sm:divide-y-0 sm:divide-x divide-white/5">
+    <!-- ================= SERVICES (CLEAR, HONEST, EDITORIAL) ================= -->
+    <section id="services" class="py-20 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <div class="p-2 space-y-1">
-          <div class="font-mono text-3xl sm:text-4xl font-extrabold text-white">4,800+</div>
-          <div class="text-xs sm:text-sm text-slate-400">Permitted Projects Completed</div>
-          <div class="text-[10px] font-mono text-emerald-400">100% City Inspection Pass Rate</div>
-        </div>
-
-        <div class="p-2 space-y-1">
-          <div class="font-mono text-3xl sm:text-4xl font-extrabold text-amber-400">4.98 / 5.0</div>
-          <div class="text-xs sm:text-sm text-slate-400">Verified Google Review Score</div>
-          <div class="text-[10px] font-mono text-slate-400">184 Verified Local Clients</div>
-        </div>
-
-        <div class="p-2 space-y-1">
-          <div class="font-mono text-3xl sm:text-4xl font-extrabold text-white">22 Min</div>
-          <div class="text-xs sm:text-sm text-slate-400">Average Emergency Response</div>
-          <div class="text-[10px] font-mono text-cyan-400">Austin, Westlake & Lakeway</div>
-        </div>
-
-        <div class="p-2 space-y-1">
-          <div class="font-mono text-3xl sm:text-4xl font-extrabold text-white">100%</div>
-          <div class="text-xs sm:text-sm text-slate-400">Master-Level Technicians</div>
-          <div class="text-[10px] font-mono text-amber-400">Zero Unsupervised Apprentices</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= BENTO GRID SERVICES SECTION ================= -->
-  <section id="services" class="py-24 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
-        <div class="space-y-3 max-w-2xl">
-          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400">
-            <span class="w-8 h-[1px] bg-amber-400"></span>
-            Precision Electrical Services
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Engineered for Modern Residential & Commercial Demands
+        <div class="max-w-2xl mb-14 space-y-2">
+          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">What We Do</span>
+          <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
+            Specialized electrical services for residential properties.
           </h2>
+          <p class="text-sm text-zinc-600 leading-relaxed">
+            We don't take on 50 different trades. We specialize strictly in safe, modern electrical systems for single-family homes, historical restorations, and residential remodels.
+          </p>
         </div>
-        <p class="text-slate-400 text-sm max-w-md">
-          Every installation complies with the latest National Electrical Code (NEC 2023) and Austin Energy requirements, backed by our lifetime craftsmanship guarantee.
-        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Service 1 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">200A & 400A Panel Modernization</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Upgrading outdated 100A panels or hazardous Federal Pacific & Zinsco boxes. Includes Austin Energy meter pull, new grounding electrodes, surge suppression, and city permit inspection.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Typical turnaround: <strong>1 Day</strong></span>
+              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="battery-charging" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">EV Charger Installations</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Dedicated 240V circuits for Tesla Wall Connectors, Rivian, ChargePoint, and universal Level 2 stations. We calculate your panel's load to ensure safe, code-compliant charging.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Typical turnaround: <strong>3–4 Hours</strong></span>
+              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="lightbulb" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">Architectural & Recessed Lighting</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Clean installation of trimless flangeless LED downlights, under-cabinet illumination, and Lutron Caséta smart dimmers. Laser-aligned with zero ceiling patching required.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Room or whole-home</span>
+              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="alert-circle" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">Electrical Troubleshooting & Repairs</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Flickering circuits, tripping arc-fault breakers, warm switches, dead outlets, and burning odors. We trace faulty wiring with thermal imaging and deliver transparent solutions.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Same-day priority slots</span>
+              <a href="tel:5128949102" class="font-medium text-zinc-900 hover:underline">Call for Help →</a>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">Whole-Home Surge Suppression</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Protect sensitive electronics, HVAC compressors, and smart appliances from Central Texas grid fluctuations and lightning surges with panel-mounted Type 1/2 SPD units.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Installed in under 2 hours</span>
+              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4 hover:border-zinc-400 transition-colors flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-10 h-10 rounded-lg bg-sand flex items-center justify-center text-zinc-800">
+                <i data-lucide="home" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold text-zinc-900">Remodels & Historic Rewiring</h3>
+              <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
+                Safe removal of knob-and-tube or ungrounded cloth wiring in older Austin homes (Hyde Park, Clarksville, Travis Heights). Modern circuitry without wrecking historic plaster.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-stoneBorder flex items-center justify-between text-xs text-zinc-500">
+              <span>Detailed written scope</span>
+              <a href="#contact" class="font-medium text-zinc-900 hover:underline">Get Estimate →</a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
+    </section>
 
-      <!-- Bento Grid Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- ================= TRANSPARENT PRICING GUIDE ================= -->
+    <section id="pricing" class="py-20 bg-sand/40 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <!-- Bento Card 1: 200A / 400A Main Service Panels (Large 2 Cols) -->
-        <div class="md:col-span-2 rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/40 p-8 transition-all group relative overflow-hidden flex flex-col justify-between">
-          <div class="absolute -right-16 -top-16 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl pointer-events-none group-hover:bg-amber-500/10 transition-colors"></div>
-
-          <div class="space-y-4 relative z-10">
-            <div class="flex items-center justify-between">
-              <span class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                <i data-lucide="cpu" class="w-6 h-6"></i>
-              </span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-white/5 text-slate-300 border border-white/10">
-                High Demand · 1-Day Turnaround
-              </span>
-            </div>
-
-            <h3 class="text-2xl font-bold text-white group-hover:text-amber-300 transition-colors">
-              200A & 400A Main Service Modernization
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed max-w-xl">
-              Eliminate dangerous obsolete Federal Pacific, Zinsco, or undersized 100A panels. We provide turn-key utility coordination with Austin Energy, whole-home copper busbars, Siemens/Square D equipment, and integrated Type 1 whole-house surge suppression.
-            </p>
-
-            <div class="flex flex-wrap gap-2 pt-2">
-              <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-vanguard-950 text-slate-300 border border-white/5">Austin Energy Permitted</span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-vanguard-950 text-slate-300 border border-white/5">Infrared Thermal Tested</span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-vanguard-950 text-slate-300 border border-white/5">Whole-Home Surge Protected</span>
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
-            <div class="text-xs font-mono text-slate-400">
-              Typical Turnaround: <strong class="text-white">6-8 Hours (No Overnight Outages)</strong>
-            </div>
-            <button onclick="openBookingModal('Main Service Panel Upgrade')" class="text-sm font-semibold text-amber-400 group-hover:text-amber-300 flex items-center gap-1.5">
-              <span>View Specs & Pricing</span>
-              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
-            </button>
-          </div>
+        <div class="max-w-2xl mb-12 space-y-2">
+          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Honest Numbers</span>
+          <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
+            Clear, upfront pricing guide. No hidden extras.
+          </h2>
+          <p class="text-sm text-zinc-600">
+            We provide exact, fixed-price proposals after assessing your site. Here are realistic ranges for standard residential projects in Austin:
+          </p>
         </div>
 
-        <!-- Bento Card 2: Tesla & EV Fast Charging -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-cyan-500/40 p-8 transition-all group relative overflow-hidden flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400">
-                <i data-lucide="battery-charging" class="w-6 h-6"></i>
-              </span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30">
-                Tesla Certified
-              </span>
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4">
+            <div>
+              <div class="text-xs font-semibold uppercase text-zinc-500">Level 2 EV Charger</div>
+              <div class="text-2xl font-bold text-zinc-900 mt-1">$750 – $1,400</div>
+              <div class="text-xs text-zinc-500 mt-0.5">Labor + conduit + breaker</div>
             </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
-              EV Hyper-Chargers & Microgrids
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              Level 2 48A/80A dedicated hardwired circuits for Tesla Universal Wall Connectors, Rivian, and Porsche. Dynamic load calculation to prevent breaker trips.
-            </p>
-
-            <ul class="text-xs text-slate-400 space-y-1.5 pt-2">
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Up to 44 Miles of Range per Hour
-              </li>
-              <li class="flex items-center gap-2">
-                <i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Federal 30% Tax Credit Eligible
-              </li>
+            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Up to 50ft dedicated 240V run</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Hardwired or 14-50 NEMA outlet</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Tested with vehicle before handover</li>
             </ul>
           </div>
 
-          <div class="mt-8 pt-6 border-t border-white/5">
-            <button onclick="openBookingModal('EV Charger Installation')" class="text-sm font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1.5">
-              <span>Book EV Installation</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Bento Card 3: Architectural Lighting & Lutron -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/40 p-8 transition-all group relative overflow-hidden flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                <i data-lucide="lightbulb" class="w-6 h-6"></i>
-              </span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-white/5 text-slate-300 border border-white/10">
-                Lutron Certified
-              </span>
+          <div class="bg-white border-2 border-zinc-900 rounded-xl p-6 space-y-4 relative shadow-sm">
+            <div class="absolute -top-3 right-4 px-2.5 py-0.5 rounded-full bg-zinc-900 text-white text-[10px] font-bold uppercase tracking-wider">
+              Most Requested
             </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
-              Architectural Lighting Design
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              Trimless flangeless recessed fixtures, low-voltage landscape wash, indirect cove lighting, and seamless Lutron Caséta & RadioRA 3 automation.
-            </p>
-
-            <div class="text-xs font-mono text-slate-400 pt-2">
-              Custom Kelvin curves (2200K - 4000K) tailored to your architecture.
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-white/5">
-            <a href="#lighting-demo" class="text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-              <span>Test Simulator Below</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Bento Card 4: 24/7 Rapid Emergency Response -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-red-500/40 p-8 transition-all group relative overflow-hidden flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="p-3 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400">
-                <i data-lucide="alert-triangle" class="w-6 h-6"></i>
-              </span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/30">
-                Priority Dispatch
-              </span>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-red-300 transition-colors">
-              24/7 Emergency Diagnostics
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              Total power loss, burning electrical odors, sparking outlets, buzzing panels, or storm damage. Master technicians dispatched with fully stocked vans.
-            </p>
-
-            <div class="text-xs text-red-400 font-mono flex items-center gap-1.5 pt-2">
-              <span class="w-2 h-2 rounded-full bg-red-400 status-pulse"></span>
-              Austin Metro Avg: 22 Mins Arrival
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-white/5">
-            <a href="tel:5128949102" class="text-sm font-semibold text-red-400 hover:text-red-300 flex items-center gap-1.5">
-              <span>Call Hotline (Direct)</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Bento Card 5: Whole-Home Backup Generators -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/40 p-8 transition-all group relative overflow-hidden flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                <i data-lucide="power" class="w-6 h-6"></i>
-              </span>
-              <span class="text-xs font-mono px-2.5 py-1 rounded-full bg-white/5 text-slate-300 border border-white/10">
-                Generac & Kohler
-              </span>
-            </div>
-
-            <h3 class="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
-              Whole-Home Backup Generation
-            </h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              Automatic Transfer Switches (ATS) connected to natural gas or liquid propane. Restores complete HVAC, refrigeration, and medical devices within 10 seconds of grid drop.
-            </p>
-
-            <div class="text-xs font-mono text-slate-400 pt-2">
-              Essential protection for Texas winter freezes & summer grid stress.
-            </div>
-          </div>
-
-          <div class="mt-8 pt-6 border-t border-white/5">
-            <button onclick="openBookingModal('Whole-Home Generator Consultation')" class="text-sm font-semibold text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-              <span>Inquire Generator System</span>
-              <i data-lucide="arrow-right" class="w-4 h-4"></i>
-            </button>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= INTERACTIVE INSTANT COST CALCULATOR ================= -->
-  <section id="calculator" class="py-24 bg-vanguard-900/70 border-y border-white/5 relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400">
-          <i data-lucide="calculator" class="w-4 h-4"></i>
-          Transparent Engineering Rates
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Instant Project Scope & Cost Estimator
-        </h2>
-        <p class="text-slate-400 text-sm">
-          No vague ranges. Select your project parameters below to get an instant realistic timeline and cost bracket based on current Austin Energy permit guidelines.
-        </p>
-      </div>
-
-      <div class="grid lg:grid-cols-12 gap-8 items-start">
-        
-        <!-- Calculator Inputs (8 Cols) -->
-        <div class="lg:col-span-7 bg-vanguard-950 rounded-2xl border border-white/10 p-6 sm:p-8 space-y-8 shadow-card">
-          
-          <!-- Step 1: Select Service -->
-          <div class="space-y-3">
-            <label class="block text-xs font-mono uppercase tracking-wider text-slate-400">
-              Step 1: Select Primary Scope
-            </label>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="serviceOptions">
-              
-              <button type="button" onclick="selectCalcService('panel', this)" class="calc-service-btn active p-4 rounded-xl border border-amber-500 bg-amber-500/10 text-left transition-all">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-sm text-white">200A Service Modernization</span>
-                  <span class="text-xs font-mono text-amber-400">Most Popular</span>
-                </div>
-                <div class="text-xs text-slate-400">Replace 100A/150A panel, meter base, Austin Energy permit.</div>
-              </button>
-
-              <button type="button" onclick="selectCalcService('ev', this)" class="calc-service-btn p-4 rounded-xl border border-white/5 bg-vanguard-900 hover:border-white/20 text-left transition-all">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-sm text-white">Level 2 EV Fast Charger</span>
-                  <span class="text-xs font-mono text-cyan-400">Tesla/Universal</span>
-                </div>
-                <div class="text-xs text-slate-400">Dedicated 50A/60A conduit run, wall connector mounting.</div>
-              </button>
-
-              <button type="button" onclick="selectCalcService('lighting', this)" class="calc-service-btn p-4 rounded-xl border border-white/5 bg-vanguard-900 hover:border-white/20 text-left transition-all">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-sm text-white">Architectural Recessed Lighting</span>
-                  <span class="text-xs font-mono text-amber-400">Lutron Ready</span>
-                </div>
-                <div class="text-xs text-slate-400">Flangeless wafer cans, dimmers, circuit distribution.</div>
-              </button>
-
-              <button type="button" onclick="selectCalcService('rewire', this)" class="calc-service-btn p-4 rounded-xl border border-white/5 bg-vanguard-900 hover:border-white/20 text-left transition-all">
-                <div class="flex items-center justify-between mb-1">
-                  <span class="font-bold text-sm text-white">Full Estate Rewire / Remodel</span>
-                  <span class="text-xs font-mono text-slate-400">Comprehensive</span>
-                </div>
-                <div class="text-xs text-slate-400">Romex pull, grounded outlets, subpanels, code signoff.</div>
-              </button>
-
-            </div>
-          </div>
-
-          <!-- Step 2: Property Size Slider -->
-          <div class="space-y-4">
-            <div class="flex justify-between items-center">
-              <label class="text-xs font-mono uppercase tracking-wider text-slate-400">
-                Step 2: Property Square Footage
-              </label>
-              <span id="sqftDisplay" class="font-mono font-bold text-amber-400 text-sm">2,500 sq ft</span>
-            </div>
-            <input type="range" id="sqftSlider" min="1000" max="6500" step="250" value="2500" oninput="updateCalculator()" class="w-full">
-            <div class="flex justify-between text-[10px] font-mono text-slate-500">
-              <span>1,000 sq ft (Condo)</span>
-              <span>3,500 sq ft (Suburban)</span>
-              <span>6,500+ sq ft (Luxury Estate)</span>
-            </div>
-          </div>
-
-          <!-- Step 3: Priority Dispatch Level -->
-          <div class="space-y-3">
-            <label class="block text-xs font-mono uppercase tracking-wider text-slate-400">
-              Step 3: Scheduling Priority
-            </label>
-            <div class="grid grid-cols-2 gap-3">
-              <label class="p-3 rounded-xl border border-white/10 bg-vanguard-900 flex items-center gap-3 cursor-pointer hover:border-amber-500/40">
-                <input type="radio" name="priority" value="standard" checked onchange="updateCalculator()" class="text-amber-500 focus:ring-0">
-                <div>
-                  <div class="text-xs font-bold text-white">Standard Schedule</div>
-                  <div class="text-[10px] text-slate-400">Within 3 to 5 business days</div>
-                </div>
-              </label>
-              <label class="p-3 rounded-xl border border-white/10 bg-vanguard-900 flex items-center gap-3 cursor-pointer hover:border-amber-500/40">
-                <input type="radio" name="priority" value="rush" onchange="updateCalculator()" class="text-amber-500 focus:ring-0">
-                <div>
-                  <div class="text-xs font-bold text-amber-300">Priority Rush Dispatch</div>
-                  <div class="text-[10px] text-slate-400">Within 24 to 48 hours</div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Calculator Result Summary Card (5 Cols) -->
-        <div class="lg:col-span-5 bg-gradient-to-b from-vanguard-850 to-vanguard-950 rounded-2xl border border-amber-500/30 p-6 sm:p-8 space-y-6 shadow-glow-amber relative">
-          <div class="flex items-center justify-between pb-4 border-b border-white/10">
             <div>
-              <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400">Calculated Estimate Range</div>
-              <div id="estPriceRange" class="text-3xl sm:text-4xl font-extrabold font-mono text-amber-400 mt-1">
-                $3,200 – $4,100
-              </div>
+              <div class="text-xs font-semibold uppercase text-zinc-500">200A Main Panel Upgrade</div>
+              <div class="text-2xl font-bold text-zinc-900 mt-1">$2,800 – $3,900</div>
+              <div class="text-xs text-zinc-500 mt-0.5">Turnkey with city permit & utility disconnect</div>
             </div>
-            <span class="p-2 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">
-              <i data-lucide="shield-check" class="w-6 h-6"></i>
-            </span>
+            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Brand new Siemens/Square D panel</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Austin Energy utility coordination</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> City permit fees & inspection passed</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Whole-home surge protector included</li>
+            </ul>
           </div>
 
-          <!-- Breakdown Details -->
-          <div class="space-y-3.5 text-xs">
-            <div class="flex justify-between items-center text-slate-300 py-1 border-b border-white/5">
-              <span class="text-slate-400">Turnaround Duration:</span>
-              <span id="estDuration" class="font-mono font-bold text-white">1 Full Day (8 Hours)</span>
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-4">
+            <div>
+              <div class="text-xs font-semibold uppercase text-zinc-500">Diagnostic & Repair</div>
+              <div class="text-2xl font-bold text-zinc-900 mt-1">$140 – $220</div>
+              <div class="text-xs text-zinc-500 mt-0.5">Comprehensive troubleshooting visit</div>
             </div>
-            <div class="flex justify-between items-center text-slate-300 py-1 border-b border-white/5">
-              <span class="text-slate-400">City of Austin Permit:</span>
-              <span id="estPermit" class="font-mono text-emerald-400 font-semibold">Included & Handled</span>
-            </div>
-            <div class="flex justify-between items-center text-slate-300 py-1 border-b border-white/5">
-              <span class="text-slate-400">Workmanship Warranty:</span>
-              <span class="font-mono text-amber-400 font-semibold">Lifetime Guarantee</span>
-            </div>
-            <div class="flex justify-between items-center text-slate-300 py-1 border-b border-white/5">
-              <span class="text-slate-400">Lead Electrician:</span>
-              <span class="font-mono text-white">Licensed Master #49281</span>
-            </div>
+            <ul class="text-xs text-zinc-600 space-y-2 pt-2 border-t border-stoneBorder">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Full electrical panel scan</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Circuit tracing & safety audit</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-zinc-900"></i> Fee applies to repair work if approved</li>
+            </ul>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-vanguard-950/80 border border-white/5 text-[11px] text-slate-300 leading-relaxed flex items-start gap-2.5">
-            <i data-lucide="info" class="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5"></i>
-            <span>This calculation reflects our fixed, itemized pricing. We never add surprise labor fees or permit markups after work begins.</span>
-          </div>
-
-          <button onclick="lockInQuote()" class="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-vanguard-950 font-bold text-sm shadow-glow-amber transition-all flex items-center justify-center gap-2">
-            <i data-lucide="lock" class="w-4 h-4"></i>
-            <span>Lock In This Scope & Request Date</span>
-          </button>
-
-          <div class="text-center">
-            <span class="text-[10px] text-slate-500">Zero deposit required for initial diagnostic walk-through.</span>
-          </div>
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SCRAPED GOOGLE REVIEWS SHOWCASE ================= -->
-  <!-- This directly showcases how scraped Google Maps data should look when polished into an elite tier presentation -->
-  <section id="reviews" class="py-24 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <!-- Section Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-        <div class="space-y-3">
-          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400">
-            <span class="w-8 h-[1px] bg-amber-400"></span>
-            Verified Google Reviews (184 Total)
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Reputation Grounded in Austin Neighborhoods
-          </h2>
-        </div>
-
-        <!-- Google Score Badge Summary Card -->
-        <div class="flex items-center gap-4 bg-vanguard-900 border border-white/10 px-5 py-3 rounded-2xl">
-          <div class="w-10 h-10 rounded-xl bg-white p-2 flex items-center justify-center">
-            <svg class="w-full h-full" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="flex items-center gap-1 text-amber-400 font-mono font-bold text-sm">
-              <span>4.98</span>
-              <span>★★★★★</span>
-            </div>
-            <div class="text-xs text-slate-400">100% 5-Star Clean Verified Rating</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Review Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        
-        <!-- Review 1 -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/30 p-6 sm:p-7 transition-all flex flex-col justify-between space-y-6">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-yellow-300 text-vanguard-950 font-bold font-mono text-sm flex items-center justify-center">
-                  MH
-                </div>
-                <div>
-                  <h4 class="text-sm font-bold text-white">Dr. Michael Harrison</h4>
-                  <div class="text-[11px] text-slate-400">West Lake Hills, Austin</div>
-                </div>
-              </div>
-              <span class="text-xs font-mono text-amber-400">★★★★★</span>
-            </div>
-
-            <!-- Highlight Quote -->
-            <div class="text-amber-300 font-semibold text-sm leading-snug">
-              “Flawless 400A upgrade. The conduit work looks like modern sculpture.”
-            </div>
-
-            <p class="text-xs text-slate-300 leading-relaxed">
-              We were adding two Level 2 Tesla chargers and an induction cooktop, which overloaded our old 150A Zinsco panel. Vanguard handled the entire permit with Austin Energy, had the meter pulled, and our power was back on before 4 PM. Unbelievable cleanliness—wore boot covers the entire time.
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-slate-400">
-            <span class="bg-vanguard-950 px-2 py-1 rounded text-slate-300">Service: 400A Upgrade</span>
-            <span>Verified 2 weeks ago</span>
-          </div>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/30 p-6 sm:p-7 transition-all flex flex-col justify-between space-y-6">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-300 text-vanguard-950 font-bold font-mono text-sm flex items-center justify-center">
-                  EC
-                </div>
-                <div>
-                  <h4 class="text-sm font-bold text-white">Elena Vance & Chris Ortiz</h4>
-                  <div class="text-[11px] text-slate-400">Tarrytown, Austin</div>
-                </div>
-              </div>
-              <span class="text-xs font-mono text-amber-400">★★★★★</span>
-            </div>
-
-            <!-- Highlight Quote -->
-            <div class="text-amber-300 font-semibold text-sm leading-snug">
-              “Saved our house at 11:30 PM on a Sunday night when the main breaker melted.”
-            </div>
-
-            <p class="text-xs text-slate-300 leading-relaxed">
-              We smelled a strong fishy/electrical odor in our hallway. I called Vanguard’s emergency line and the master technician arrived in 24 minutes with thermal imaging gear. Diagnosed a loose neutral lug that was overheating to 195°F. Repaired it on the spot. Lifesavers.
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-slate-400">
-            <span class="bg-vanguard-950 px-2 py-1 rounded text-slate-300">Service: Emergency Dispatch</span>
-            <span>Verified 1 month ago</span>
-          </div>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="rounded-2xl bg-vanguard-900 border border-white/5 hover:border-amber-500/30 p-6 sm:p-7 transition-all flex flex-col justify-between space-y-6">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-300 text-vanguard-950 font-bold font-mono text-sm flex items-center justify-center">
-                  JL
-                </div>
-                <div>
-                  <h4 class="text-sm font-bold text-white">Julian Laurent Architecture</h4>
-                  <div class="text-[11px] text-slate-400">Barton Creek, Austin</div>
-                </div>
-              </div>
-              <span class="text-xs font-mono text-amber-400">★★★★★</span>
-            </div>
-
-            <!-- Highlight Quote -->
-            <div class="text-amber-300 font-semibold text-sm leading-snug">
-              “The only electrical contractor in Central Texas we trust on our architectural projects.”
-            </div>
-
-            <p class="text-xs text-slate-300 leading-relaxed">
-              As an architectural firm, we design trimless recessed lighting and custom linear reveals with zero margin for error. Vanguard’s laser alignment and understanding of Lutron Homeworks QSX integration is second to none. Truly master-grade artisans.
-            </p>
-          </div>
-
-          <div class="pt-4 border-t border-white/5 flex items-center justify-between text-[10px] font-mono text-slate-400">
-            <span class="bg-vanguard-950 px-2 py-1 rounded text-slate-300">Service: Lutron Lighting</span>
-            <span>Verified 3 weeks ago</span>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="mt-8 text-center">
-        <a href="https://maps.google.com" target="_blank" class="inline-flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-amber-400 transition-colors">
-          <span>Read all 184 reviews on Google Maps</span>
-          <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= MASTER STANDARDS COMPARISON TABLE ================= -->
-  <section class="py-20 bg-vanguard-900/40 border-y border-white/5">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">
-          The Vanguard Standard vs. Typical Contractors
-        </h2>
-        <p class="text-xs sm:text-sm text-slate-400">
-          Why luxury homeowners and commercial developers switch to our licensed master service.
-        </p>
-      </div>
-
-      <div class="max-w-4xl mx-auto bg-vanguard-950 rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-xs sm:text-sm">
-            <thead>
-              <tr class="border-b border-white/10 bg-vanguard-900/80 font-mono text-xs text-slate-400">
-                <th class="p-4 sm:p-5">CRITICAL METRIC</th>
-                <th class="p-4 sm:p-5 text-amber-400 font-bold">VANGUARD ELECTRIC</th>
-                <th class="p-4 sm:p-5 text-slate-500">AVERAGE LOCAL CONTRACTOR</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-white/5 text-slate-300">
-              <tr>
-                <td class="p-4 sm:p-5 font-semibold text-white">Technician Qualification</td>
-                <td class="p-4 sm:p-5 text-emerald-400 font-medium flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i> Licensed Master Electrician on site
-                </td>
-                <td class="p-4 sm:p-5 text-slate-400">Often unsupervised 1st-year apprentice</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-5 font-semibold text-white">Pricing Transparency</td>
-                <td class="p-4 sm:p-5 text-emerald-400 font-medium flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i> 100% Guaranteed binding written quote
-                </td>
-                <td class="p-4 sm:p-5 text-slate-400">Vague hourly billing + surprise material fees</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-5 font-semibold text-white">Clean Home Guarantee</td>
-                <td class="p-4 sm:p-5 text-emerald-400 font-medium flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i> Shoe covers, drop cloths & HEPA vacuuming
-                </td>
-                <td class="p-4 sm:p-5 text-slate-400">Drywall dust & wire clippings left on floors</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-5 font-semibold text-white">Austin Permitting & Inspection</td>
-                <td class="p-4 sm:p-5 text-emerald-400 font-medium flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i> 100% Handled with Austin Energy
-                </td>
-                <td class="p-4 sm:p-5 text-slate-400">Often skipped to cut costs (risking insurance)</td>
-              </tr>
-              <tr>
-                <td class="p-4 sm:p-5 font-semibold text-white">Workmanship Warranty</td>
-                <td class="p-4 sm:p-5 text-emerald-400 font-medium flex items-center gap-2">
-                  <i data-lucide="check-circle" class="w-4 h-4"></i> Lifetime Craftsmanship Guarantee
-                </td>
-                <td class="p-4 sm:p-5 text-slate-400">30 - 90 days limited</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ================= SERVICE AREA & COVERAGE MAP ================= -->
-  <section id="service-area" class="py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="grid lg:grid-cols-12 gap-10 items-center">
-        
-        <div class="lg:col-span-5 space-y-6">
-          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400">
-            <i data-lucide="map-pin" class="w-4 h-4"></i>
-            Central Texas Rapid Coverage
-          </div>
-
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Strategically Positioned Across the Austin Metro
-          </h2>
-
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Our dispatch hubs maintain GPS-routed utility vans carrying complete panel hardware, Tesla chargers, Lutron switches, and thermal diagnostics for rapid same-day arrival.
+        <div class="mt-8 text-center">
+          <p class="text-xs text-zinc-500">
+            *Final prices depend on panel accessibility, attic conduit paths, and utility requirements. We provide a firm written price before any work begins.
           </p>
-
-          <!-- Zones List -->
-          <div class="space-y-3">
-            <div class="p-3.5 rounded-xl bg-vanguard-900 border border-white/5 flex items-center justify-between text-xs">
-              <div class="flex items-center gap-2.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="font-bold text-white">Central Austin & Downtown (78701, 78703, 78704)</span>
-              </div>
-              <span class="font-mono text-amber-400">18 min avg</span>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-vanguard-900 border border-white/5 flex items-center justify-between text-xs">
-              <div class="flex items-center gap-2.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="font-bold text-white">West Lake Hills & Rollingwood (78746)</span>
-              </div>
-              <span class="font-mono text-amber-400">22 min avg</span>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-vanguard-900 border border-white/5 flex items-center justify-between text-xs">
-              <div class="flex items-center gap-2.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="font-bold text-white">Lakeway, Bee Cave & Barton Creek (78734, 78738)</span>
-              </div>
-              <span class="font-mono text-amber-400">25 min avg</span>
-            </div>
-
-            <div class="p-3.5 rounded-xl bg-vanguard-900 border border-white/5 flex items-center justify-between text-xs">
-              <div class="flex items-center gap-2.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="font-bold text-white">The Domain, Cedar Park & Round Rock</span>
-              </div>
-              <span class="font-mono text-amber-400">28 min avg</span>
-            </div>
-          </div>
-
-          <div class="pt-2">
-            <a href="tel:5128949102" class="inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300">
-              <i data-lucide="phone-call" class="w-4 h-4"></i>
-              <span>Need Immediate Dispatch to Your Zip Code? Call Now</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Styled Dark Mode Vector Service Map -->
-        <div class="lg:col-span-7">
-          <div class="relative rounded-2xl bg-vanguard-950 border border-white/10 p-6 sm:p-8 shadow-card overflow-hidden">
-            
-            <div class="flex items-center justify-between mb-6 pb-3 border-b border-white/5 text-xs font-mono">
-              <span class="text-slate-400 flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 status-pulse"></span>
-                LIVE DISPATCH RADAR
-              </span>
-              <span class="text-slate-500">Updated Real-Time</span>
-            </div>
-
-            <!-- Stylized Austin Vector Map Diagram -->
-            <div class="relative h-80 rounded-xl bg-vanguard-900/90 border border-white/5 flex items-center justify-center overflow-hidden">
-              
-              <!-- Subtle Austin Colorado River / Lady Bird Lake Vector Line -->
-              <svg class="absolute inset-0 w-full h-full text-cyan-900/30" viewBox="0 0 500 300" fill="none" stroke="currentColor" stroke-width="6">
-                <path d="M 50 140 Q 150 130 220 160 T 380 140 T 480 180" />
-                <path d="M 220 30 L 220 270" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" />
-                <path d="M 40 160 L 460 160" stroke="rgba(255,255,255,0.04)" stroke-width="1.5" />
-                <circle cx="250" cy="150" r="80" stroke="rgba(245,158,11,0.08)" stroke-width="1" />
-                <circle cx="250" cy="150" r="140" stroke="rgba(245,158,11,0.04)" stroke-width="1" />
-              </svg>
-
-              <!-- Central Austin Hub -->
-              <div class="absolute top-[48%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                <div class="relative flex items-center justify-center">
-                  <span class="w-4 h-4 rounded-full bg-amber-400 status-pulse"></span>
-                  <span class="absolute w-8 h-8 rounded-full bg-amber-400/20 animate-ping"></span>
-                </div>
-                <div class="mt-2 px-2.5 py-1 rounded bg-vanguard-950/90 border border-amber-500/40 text-[10px] font-mono text-amber-300 font-bold shadow-lg">
-                  HQ: Austin Downtown (78701)
-                </div>
-              </div>
-
-              <!-- Westlake Hub -->
-              <div class="absolute top-[42%] left-[28%] flex flex-col items-center">
-                <div class="w-3 h-3 rounded-full bg-emerald-400 status-pulse"></div>
-                <div class="mt-1.5 px-2 py-0.5 rounded bg-vanguard-950/80 border border-white/10 text-[9px] font-mono text-slate-300">
-                  Van #1: West Lake (Active)
-                </div>
-              </div>
-
-              <!-- Lakeway Hub -->
-              <div class="absolute top-[30%] left-[14%] flex flex-col items-center">
-                <div class="w-2.5 h-2.5 rounded-full bg-emerald-400"></div>
-                <div class="mt-1 px-1.5 py-0.5 rounded bg-vanguard-950/80 border border-white/10 text-[8px] font-mono text-slate-400">
-                  Lakeway
-                </div>
-              </div>
-
-              <!-- Round Rock Hub -->
-              <div class="absolute top-[20%] right-[22%] flex flex-col items-center">
-                <div class="w-3 h-3 rounded-full bg-emerald-400 status-pulse"></div>
-                <div class="mt-1.5 px-2 py-0.5 rounded bg-vanguard-950/80 border border-white/10 text-[9px] font-mono text-slate-300">
-                  Van #2: North Metro
-                </div>
-              </div>
-
-              <!-- South Austin / Barton Creek -->
-              <div class="absolute bottom-[22%] left-[40%] flex flex-col items-center">
-                <div class="w-2.5 h-2.5 rounded-full bg-cyan-400"></div>
-                <div class="mt-1 px-1.5 py-0.5 rounded bg-vanguard-950/80 border border-white/10 text-[8px] font-mono text-slate-400">
-                  Barton Creek
-                </div>
-              </div>
-
-            </div>
-
-            <div class="mt-4 flex flex-wrap items-center justify-between text-xs text-slate-400 pt-2 font-mono">
-              <span class="flex items-center gap-1.5">
-                <i data-lucide="navigation" class="w-3.5 h-3.5 text-amber-400"></i>
-                Service Radius: 35 Miles from Central Austin
-              </span>
-              <span class="text-amber-400">Zero Travel Surcharge</span>
-            </div>
-
-          </div>
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- ================= FREQUENTLY ASKED QUESTIONS ================= -->
-  <section id="faq" class="py-24 bg-vanguard-900/40 border-t border-white/5">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      
-      <div class="text-center mb-16 space-y-3">
-        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-amber-400">
-          <i data-lucide="help-circle" class="w-4 h-4"></i>
-          Straightforward Answers
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-          Frequently Asked Questions
-        </h2>
-        <p class="text-slate-400 text-sm">
-          Everything you need to know about code compliance, permits, warranties, and emergency diagnostics.
-        </p>
-      </div>
-
-      <div class="space-y-4" id="faqAccordion">
+    <!-- ================= OUR STANDARDS (THE DIFFERENCE) ================= -->
+    <section id="about" class="py-20 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <!-- FAQ 1 -->
-        <div class="rounded-xl bg-vanguard-950 border border-white/10 overflow-hidden">
-          <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center hover:text-amber-300 transition-colors">
-            <span>Why do your panel upgrade quotes include Austin Energy coordination & city permits?</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400 transition-transform duration-200"></i>
-          </button>
-          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
-            In the City of Austin and Travis County, replacing a main service electrical panel requires an electrical permit and coordination with Austin Energy to disconnect and reconnect the utility meter. Unpermitted work is not only illegal—it can cause homeowner’s insurance claims to be denied in the event of a fire. Vanguard handles 100% of the paperwork, plans, permit fees, and city inspection signoffs with a 100% first-time pass rate.
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">How We Work</span>
+            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
+              We treat your home like our own. No mess, no cut corners.
+            </h2>
+            <p class="text-sm text-zinc-600 leading-relaxed">
+              We started Vanguard after watching too many contractors arrive late, track mud through living rooms, cut drywall haphazardly, and leave homeowners with surprise invoices. We built a company based on simple, old-fashioned standards:
+            </p>
+
+            <div class="space-y-4 pt-2">
+              <div class="flex gap-4 items-start">
+                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">1</div>
+                <div>
+                  <h4 class="text-sm font-bold text-zinc-900">Clean Shoes & HEPA Vacuums</h4>
+                  <p class="text-xs text-zinc-600 mt-0.5">We lay down protective floor runners, wear boot covers indoors, and vacuum every drywall shaving before packing our tools.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">2</div>
+                <div>
+                  <h4 class="text-sm font-bold text-zinc-900">No Unsupervised Apprentices</h4>
+                  <p class="text-xs text-zinc-600 mt-0.5">Every installation is overseen by a licensed Master Electrician with at least 8 years of residential field experience.</p>
+                </div>
+              </div>
+
+              <div class="flex gap-4 items-start">
+                <div class="w-6 h-6 rounded-full bg-sand flex items-center justify-center text-xs font-bold text-zinc-900 flex-shrink-0 mt-0.5">3</div>
+                <div>
+                  <h4 class="text-sm font-bold text-zinc-900">Itemized Written Scope</h4>
+                  <p class="text-xs text-zinc-600 mt-0.5">You receive a clear breakdown of parts, labor, and permit fees. If an unexpected issue arises behind a wall, we discuss it before spending a penny of your money.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="rounded-xl overflow-hidden border border-stoneBorder bg-stone-100 aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Clean modern residential home with precise architectural lighting" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= REAL GOOGLE REVIEWS (GROUNDED & CREDIBLE) ================= -->
+    <section id="reviews" class="py-20 bg-sand/30 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Google Reviews</span>
+            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal mt-1">
+              Feedback from Austin homeowners.
+            </h2>
+          </div>
+          
+          <div class="flex items-center gap-3 bg-white border border-stoneBorder px-4 py-2.5 rounded-lg shadow-sm">
+            <div class="text-amber-500 text-sm">★★★★★</div>
+            <div class="text-xs font-semibold text-zinc-800">4.9 / 5.0 Rating · 184 Verified Reviews</div>
           </div>
         </div>
 
-        <!-- FAQ 2 -->
-        <div class="rounded-xl bg-vanguard-950 border border-white/10 overflow-hidden">
-          <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center hover:text-amber-300 transition-colors">
-            <span>What should I do right now if my breaker box is buzzing or smells like fish/burning?</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400 transition-transform duration-200"></i>
-          </button>
-          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
-            A distinct fishy or burning plastic odor indicates electrical arcing where plastic wire insulation is melting under dangerous resistance. If safe, turn off the affected breaker or your main breaker immediately, and call our 24/7 direct dispatch line at <strong>(512) 894-9102</strong>. Do not touch exposed metallic panels if buzzing is accompanied by sparking.
+        <div class="grid md:grid-cols-3 gap-6">
+          
+          <!-- Review 1 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="text-amber-500 text-xs">★★★★★</div>
+                <span class="text-[11px] text-zinc-400">3 weeks ago</span>
+              </div>
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+                “Marcus and his team upgraded our 1970s electrical panel to 200A so we could add a heat pump and a Tesla charger. Austin Energy disconnected at 8:30 AM, and everything was inspected and back on by 3 PM. Super neat pipe work and zero mess left in the garage.”
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
+              <span class="font-bold text-zinc-900">David M.</span>
+              <span class="text-zinc-500">West Lake Hills</span>
+            </div>
           </div>
+
+          <!-- Review 2 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="text-amber-500 text-xs">★★★★★</div>
+                <span class="text-[11px] text-zinc-400">1 month ago</span>
+              </div>
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+                “Had a breaker that kept tripping every time our microwave ran. Another company quoted us $1,800 for unnecessary wiring replacements. Vanguard came out, ran a diagnostic, and found a loose neutral wire in the subpanel. Fixed it cleanly in an hour for a fair price. Very honest people.”
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
+              <span class="font-bold text-zinc-900">Sarah Jenkins</span>
+              <span class="text-zinc-500">Tarrytown</span>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="bg-white border border-stoneBorder rounded-xl p-6 space-y-3 shadow-sm flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <div class="text-amber-500 text-xs">★★★★★</div>
+                <span class="text-[11px] text-zinc-400">2 months ago</span>
+              </div>
+              <p class="text-xs sm:text-sm text-zinc-700 leading-relaxed">
+                “Installed 14 recessed LED cans and Lutron dimmers in our living room and kitchen. They used laser guides to align every fixture perfectly with our ceiling beams. Wore shoe covers and put plastic over our furniture without us even having to ask.”
+              </p>
+            </div>
+            <div class="pt-3 border-t border-stoneBorder flex items-center justify-between text-xs">
+              <span class="font-bold text-zinc-900">Robert & Claire G.</span>
+              <span class="text-zinc-500">Barton Hills</span>
+            </div>
+          </div>
+
         </div>
 
-        <!-- FAQ 3 -->
-        <div class="rounded-xl bg-vanguard-950 border border-white/10 overflow-hidden">
-          <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center hover:text-amber-300 transition-colors">
-            <span>Can my existing 100A or 150A panel support a Tesla or Rivian Level 2 charger?</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400 transition-transform duration-200"></i>
-          </button>
-          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
-            It depends on your current household continuous electrical load (HVAC tonnage, electric water heating, range). A Level 2 EV charger demands a continuous 48A or 50A load, which often pushes a 100A panel beyond the 80% NEC safety ceiling. We perform a formal NEC load calculation before installing. If your panel is at capacity, we can install a smart energy management load shed device or perform a modern 200A upgrade.
-          </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICE AREAS ================= -->
+    <section id="areas" class="py-16 border-b border-stoneBorder">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mb-8 space-y-2">
+          <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Service Coverage</span>
+          <h2 class="serif-display text-2xl sm:text-3xl text-zinc-950 font-normal">
+            Where we work in Greater Austin.
+          </h2>
+          <p class="text-xs sm:text-sm text-zinc-600">
+            We operate fully equipped service vans across Travis and Williamson counties with zero travel surcharges:
+          </p>
         </div>
 
-        <!-- FAQ 4 -->
-        <div class="rounded-xl bg-vanguard-950 border border-white/10 overflow-hidden">
-          <button onclick="toggleFaq(this)" class="w-full p-5 text-left font-bold text-sm sm:text-base text-white flex justify-between items-center hover:text-amber-300 transition-colors">
-            <span>What does the Vanguard Lifetime Craftsmanship Guarantee cover?</span>
-            <i data-lucide="chevron-down" class="w-4 h-4 text-amber-400 transition-transform duration-200"></i>
-          </button>
-          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-white/5 pt-3">
-            If any electrical wiring, breaker connection, conduit bend, or junction box installed by our technicians ever fails due to workmanship or installation defect, we return and repair or replace it at zero cost for as long as you own the property. All equipment is also covered by full manufacturer warranties (e.g., 10-year Eaton/Square D panel warranties).
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-zinc-700 font-medium">
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Central Austin & Downtown</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">West Lake Hills & Rollingwood</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Tarrytown & Clarksville</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Barton Hills & Zilker</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Lakeway & Bee Cave</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Cedar Park & Leander</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Round Rock & Pflugerville</div>
+          <div class="p-3 bg-white border border-stoneBorder rounded-lg">Circle C & Sunset Valley</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SIMPLE FAQ ================= -->
+    <section id="faq" class="py-16 border-b border-stoneBorder">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="mb-10 space-y-2 text-center">
+          <h2 class="serif-display text-3xl text-zinc-950 font-normal">Common Questions</h2>
+          <p class="text-xs sm:text-sm text-zinc-600">Straightforward answers about permits, timelines, and guarantees.</p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
+            <h4 class="font-bold text-sm text-zinc-900">Do I really need a city permit for a panel upgrade?</h4>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
+              Yes. The City of Austin requires an electrical permit anytime the main electrical service is modified. This protects your home and ensures your homeowner’s insurance coverage remains valid in case of an issue. We handle the entire application, drawings, and final inspection.
+            </p>
+          </div>
+
+          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
+            <h4 class="font-bold text-sm text-zinc-900">Will my power be off during a panel upgrade?</h4>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
+              Power is temporarily disconnected by Austin Energy in the morning (usually around 8:30 AM). We complete the entire replacement, install the new equipment, and restore power before 4:00 PM on the very same day. We never leave a family without electricity overnight.
+            </p>
+          </div>
+
+          <div class="border border-stoneBorder rounded-lg p-5 bg-white">
+            <h4 class="font-bold text-sm text-zinc-900">What does your 10-year workmanship warranty include?</h4>
+            <p class="text-xs sm:text-sm text-zinc-600 mt-2 leading-relaxed">
+              If any breaker connection, switch, conduit fitting, or wiring installed by our technicians ever loosens or fails due to workmanship within 10 years, we come back and repair it at zero charge to you.
+            </p>
           </div>
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- ================= CONTACT & QUOTE FORM ================= -->
+    <section id="contact" class="py-20 bg-sand/50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="bg-white border border-stoneBorder rounded-2xl p-8 sm:p-10 shadow-sm">
+          
+          <div class="max-w-xl mb-8 space-y-2">
+            <span class="text-xs uppercase tracking-wider text-zinc-500 font-semibold">Get In Touch</span>
+            <h2 class="serif-display text-3xl sm:text-4xl text-zinc-950 font-normal">
+              Request an itemized quote or consultation.
+            </h2>
+            <p class="text-xs sm:text-sm text-zinc-600">
+              Fill out the details below, or call our direct office line at <a href="tel:5128949102" class="font-bold text-zinc-900 underline">(512) 894-9102</a>. We respond to all inquiries within 2 business hours.
+            </p>
+          </div>
 
-  <!-- ================= FINAL CALL TO ACTION ================= -->
-  <section class="py-20 relative bg-gradient-to-b from-vanguard-900 to-vanguard-950 border-t border-white/5">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-      
-      <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 text-amber-400 mx-auto flex items-center justify-center shadow-glow-amber">
-        <i data-lucide="sparkles" class="w-7 h-7"></i>
+          <form onsubmit="handleFormSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+            
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-zinc-700 font-semibold mb-1">Your Name</label>
+                <input type="text" required placeholder="e.g. Thomas Miller" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+              </div>
+              <div>
+                <label class="block text-zinc-700 font-semibold mb-1">Phone Number</label>
+                <input type="tel" required placeholder="(512) 555-0192" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-zinc-700 font-semibold mb-1">Email Address</label>
+                <input type="email" required placeholder="thomas@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+              </div>
+              <div>
+                <label class="block text-zinc-700 font-semibold mb-1">Neighborhood or Zip Code</label>
+                <input type="text" required placeholder="e.g. Westlake (78746)" class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-zinc-700 font-semibold mb-1">What kind of work do you need done?</label>
+              <select class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900">
+                <option>200A or 400A Main Service Panel Upgrade</option>
+                <option>EV Home Charging Station (Tesla / Level 2)</option>
+                <option>Recessed & Architectural Lighting</option>
+                <option>Electrical Troubleshooting / Urgent Repair</option>
+                <option>Whole-Home Rewire / Remodel Consultation</option>
+                <option>Other Electrical Service</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-zinc-700 font-semibold mb-1">Briefly describe the project or issue</label>
+              <textarea rows="3" placeholder="e.g. Old 100A panel in garage tripping when running AC and dryer. Looking to upgrade to 200A and prepare for future EV charger." class="w-full px-3.5 py-2.5 rounded-lg border border-stoneBorder bg-canvas text-zinc-900 focus:outline-none focus:border-zinc-900"></textarea>
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-white font-medium text-sm transition-colors">
+                Send Request
+              </button>
+            </div>
+
+            <div id="formSuccess" class="hidden p-4 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
+              Thank you. Your request has been sent to our master electrician. We will call or email you within 2 hours.
+            </div>
+
+          </form>
+
+        </div>
+
       </div>
+    </section>
 
-      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-        Experience Master-Grade Electrical Precision.
-      </h2>
-
-      <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto">
-        Speak directly with a licensed master technician. Whether you need a quote for an architectural renovation or 30-minute emergency dispatch, we are on call now.
-      </p>
-
-      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button onclick="openBookingModal('General Inquiry')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-vanguard-950 font-bold text-base shadow-glow-amber transition-all">
-          Schedule Walkthrough & Diagnostic
-        </button>
-        <a href="tel:5128949102" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-vanguard-850 hover:bg-vanguard-800 border border-white/10 text-white font-mono font-bold text-base flex items-center justify-center gap-2">
-          <i data-lucide="phone-call" class="w-4 h-4 text-amber-400"></i>
-          <span>(512) 894-9102</span>
-        </a>
-      </div>
-
-      <div class="text-xs font-mono text-slate-500 pt-4">
-        TECL Master Electrician License #49281 · Insured to $5,000,000 · City of Austin Preferred Contractor
-      </div>
-
-    </div>
-  </section>
+  </main>
 
   <!-- ================= FOOTER ================= -->
-  <footer class="bg-vanguard-950 border-t border-white/5 py-16 text-slate-400 text-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <footer class="bg-white border-t border-stoneBorder py-12 text-zinc-500 text-xs">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-stoneBorder">
         
-        <!-- Brand Col -->
-        <div class="space-y-3">
-          <div class="flex items-center gap-2 text-white font-bold text-base">
-            <span class="w-6 h-6 rounded-lg bg-amber-500 text-vanguard-950 flex items-center justify-center text-xs">⚡</span>
-            <span>VANGUARD ELECTRIC</span>
-          </div>
-          <p class="text-slate-400 leading-relaxed text-xs">
-            Precision electrical engineering, architectural lighting, and 24/7 priority emergency dispatch across Greater Austin and Hill Country estates.
+        <div class="space-y-2">
+          <div class="text-base font-bold text-zinc-900">Vanguard Electrical</div>
+          <p class="leading-relaxed">
+            Licensed residential master electricians based in Austin, Texas. Dedicated to clean, code-compliant craftsmanship and honest pricing.
           </p>
-          <div class="font-mono text-amber-400 text-xs">
-            TX Master License #49281
-          </div>
         </div>
 
-        <!-- Quick Links -->
-        <div class="space-y-2">
-          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold">Services</div>
-          <ul class="space-y-1.5">
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">200A & 400A Panel Upgrades</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Tesla & Level 2 EV Chargers</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Architectural Lighting & Lutron</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Whole-Home Backup Generators</a></li>
-            <li><a href="#services" class="hover:text-amber-400 transition-colors">Emergency Circuit Diagnostics</a></li>
+        <div>
+          <div class="font-semibold text-zinc-800 mb-2">License & Insurance</div>
+          <ul class="space-y-1">
+            <li>TECL Master #49281</li>
+            <li>$2,000,000 Liability Bonded</li>
+            <li>City of Austin Registered Contractor</li>
           </ul>
         </div>
 
-        <!-- Service Areas -->
-        <div class="space-y-2">
-          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold">Austin Service Hubs</div>
-          <ul class="space-y-1.5 text-slate-400">
-            <li>West Lake Hills (78746)</li>
-            <li>Downtown & Tarrytown (78701, 78703)</li>
-            <li>Lakeway & Bee Cave (78734, 78738)</li>
-            <li>Barton Creek (78735)</li>
-            <li>The Domain & North Austin</li>
+        <div>
+          <div class="font-semibold text-zinc-800 mb-2">Direct Contact</div>
+          <ul class="space-y-1">
+            <li>Phone: (512) 894-9102</li>
+            <li>Email: office@vanguard-atx.com</li>
+            <li>Office: 360 Nueces St, Austin, TX 78701</li>
           </ul>
         </div>
 
-        <!-- Operating Hours & Status -->
-        <div class="space-y-2">
-          <div class="font-mono text-white text-xs uppercase tracking-wider font-bold">Operating Hours</div>
-          <div class="p-3 rounded-xl bg-vanguard-900 border border-white/5 space-y-1 text-xs">
-            <div class="flex justify-between text-slate-300">
-              <span>Emergency Dispatch:</span>
-              <span class="text-emerald-400 font-mono font-bold">24 / 7 Active</span>
-            </div>
-            <div class="flex justify-between text-slate-400">
-              <span>Standard Operations:</span>
-              <span class="font-mono">Mon–Sat 7AM–7PM</span>
-            </div>
-          </div>
-          <div class="pt-2 text-slate-400">
-            Address: 360 Nueces St, Suite 400, Austin, TX 78701
-          </div>
+        <div>
+          <div class="font-semibold text-zinc-800 mb-2">Hours of Service</div>
+          <ul class="space-y-1">
+            <li>Monday – Friday: 7:00 AM – 6:00 PM</li>
+            <li>Saturday: 8:00 AM – 4:00 PM</li>
+            <li>Sunday: Emergency calls only</li>
+          </ul>
         </div>
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500 font-mono">
-        <div>
-          © 2026 Vanguard Electric & Controls LLC. All rights reserved.
-        </div>
-        <div class="flex gap-6">
-          <a href="#" class="hover:text-slate-300">Privacy Policy</a>
-          <a href="#" class="hover:text-slate-300">Terms of Service</a>
-          <a href="#calculator" class="hover:text-slate-300">Rates Guide</a>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px]">
+        <div>© 2026 Vanguard Electrical Services LLC. All rights reserved.</div>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-zinc-800">Privacy Policy</a>
+          <a href="#" class="hover:text-zinc-800">Terms of Service</a>
         </div>
       </div>
 
     </div>
   </footer>
 
-  <!-- ================= MOBILE STICKY BOTTOM ACTION DOCK ================= -->
-  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-vanguard-950/95 backdrop-blur-xl border-t border-white/10 flex gap-2.5">
-    <a href="tel:5128949102" class="flex-1 py-3 px-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-bold text-xs font-mono flex items-center justify-center gap-2 shadow-lg">
-      <i data-lucide="phone-call" class="w-4 h-4"></i>
-      <span>Call Dispatch</span>
-    </a>
-    <button onclick="openBookingModal('Mobile Quick Booking')" class="flex-1 py-3 px-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-vanguard-950 font-bold text-xs flex items-center justify-center gap-2 shadow-glow-amber">
-      <i data-lucide="calendar" class="w-4 h-4"></i>
-      <span>Instant Quote</span>
-    </button>
-  </div>
-
-  <!-- ================= INTERACTIVE BOOKING MODAL ================= -->
-  <div id="bookingModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
-    <div class="bg-vanguard-900 border border-white/10 rounded-2xl max-w-lg w-full p-6 sm:p-8 space-y-6 relative shadow-2xl">
-      
-      <!-- Close Button -->
-      <button onclick="closeBookingModal()" class="absolute top-4 right-4 p-2 text-slate-400 hover:text-white rounded-lg bg-white/5 hover:bg-white/10">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-
-      <div>
-        <div class="text-xs font-mono text-amber-400 uppercase tracking-wider mb-1">Priority Request</div>
-        <h3 class="text-2xl font-bold text-white" id="modalServiceTitle">Schedule Diagnostic Walkthrough</h3>
-        <p class="text-xs text-slate-400 mt-1">A Master Electrician will review your request and confirm arrival within 15 minutes.</p>
-      </div>
-
-      <form id="bookingForm" onsubmit="submitBooking(event)" class="space-y-4 text-xs">
-        <div>
-          <label class="block text-slate-300 font-medium mb-1">Full Name</label>
-          <input type="text" required placeholder="e.g. Robert Sterling" class="w-full px-3.5 py-2.5 rounded-xl bg-vanguard-950 border border-white/10 text-white placeholder:text-slate-600 focus:border-amber-400 focus:outline-none">
-        </div>
-
-        <div class="grid grid-cols-2 gap-3">
-          <div>
-            <label class="block text-slate-300 font-medium mb-1">Phone Number (Direct)</label>
-            <input type="tel" required placeholder="(512) 000-0000" class="w-full px-3.5 py-2.5 rounded-xl bg-vanguard-950 border border-white/10 text-white placeholder:text-slate-600 focus:border-amber-400 focus:outline-none">
-          </div>
-          <div>
-            <label class="block text-slate-300 font-medium mb-1">Zip Code / Neighborhood</label>
-            <input type="text" required placeholder="78746 (Westlake)" class="w-full px-3.5 py-2.5 rounded-xl bg-vanguard-950 border border-white/10 text-white placeholder:text-slate-600 focus:border-amber-400 focus:outline-none">
-          </div>
-        </div>
-
-        <div>
-          <label class="block text-slate-300 font-medium mb-1">Selected Service / Notes</label>
-          <input type="text" id="modalServiceInput" value="Main Service Panel Upgrade" class="w-full px-3.5 py-2.5 rounded-xl bg-vanguard-950 border border-white/10 text-amber-300 focus:border-amber-400 focus:outline-none">
-        </div>
-
-        <div>
-          <label class="block text-slate-300 font-medium mb-1">Preferred Timeframe</label>
-          <select class="w-full px-3.5 py-2.5 rounded-xl bg-vanguard-950 border border-white/10 text-white focus:border-amber-400 focus:outline-none">
-            <option>Today / ASAP Emergency Dispatch</option>
-            <option>Tomorrow Morning (8:00 AM - 12:00 PM)</option>
-            <option>Tomorrow Afternoon (1:00 PM - 5:00 PM)</option>
-            <option>Later this week for formal consultation</option>
-          </select>
-        </div>
-
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-vanguard-950 font-bold text-sm shadow-glow-amber transition-all">
-          Confirm Priority Dispatch Request
-        </button>
-      </form>
-
-      <!-- Confirmation Banner (hidden initially) -->
-      <div id="bookingSuccess" class="hidden p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-center space-y-2">
-        <i data-lucide="check-circle" class="w-8 h-8 mx-auto text-emerald-400"></i>
-        <div class="font-bold text-sm text-white">Dispatch Ticket Confirmed!</div>
-        <div class="text-xs text-slate-300">Unit #2 notified in Westlake. Master Electrician Marcus will text your direct line within 10 minutes.</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- ================= JAVASCRIPT LOGIC ================= -->
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Mobile Menu Toggle
-    function toggleMobileMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('hidden');
-    }
-    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
-
-    // Architectural Lighting Scene Simulator
-    const scenes = {
-      sunset: {
-        tag: 'Dusk Ambient (2400K)',
-        image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-        overlayClass: 'bg-orange-600/25',
-        kelvin: '2,400K Sunset Tone',
-        efficiency: '96% Amber Lumens'
-      },
-      warm: {
-        tag: 'Lutron Architectural (2700K)',
-        image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-        overlayClass: 'bg-amber-500/20',
-        kelvin: '2,700K Warm Dim',
-        efficiency: '94% High CRI'
-      },
-      security: {
-        tag: 'High Lumens Perimeter (4000K)',
-        image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80',
-        overlayClass: 'bg-cyan-500/15',
-        kelvin: '4,000K Crisp White',
-        efficiency: '100% Perimeter Flood'
-      }
-    };
-
-    function setLightingScene(type) {
-      const s = scenes[type];
-      const img = document.getElementById('sceneImage');
-      const overlay = document.getElementById('lightingOverlay');
-      const tag = document.getElementById('lightingSceneTag');
-      const hudK = document.getElementById('hudKelvin');
-      const hudE = document.getElementById('hudEfficiency');
-
-      // Update button active states
-      document.querySelectorAll('.scene-btn').forEach(btn => {
-        btn.classList.remove('bg-amber-500/20', 'border-amber-500/40', 'text-amber-300', 'shadow-glow-amber');
-        btn.classList.add('bg-vanguard-850', 'border-white/5', 'text-slate-300');
-      });
-      const activeBtn = document.getElementById('btn-' + type);
-      if (activeBtn) {
-        activeBtn.classList.add('bg-amber-500/20', 'border-amber-500/40', 'text-amber-300', 'shadow-glow-amber');
-        activeBtn.classList.remove('bg-vanguard-850', 'border-white/5', 'text-slate-300');
-      }
-
-      // Smoothly update visual
-      img.style.opacity = '0.5';
-      setTimeout(() => {
-        img.src = s.image;
-        overlay.className = 'absolute inset-0 ' + s.overlayClass + ' mix-blend-color-dodge transition-opacity duration-700 pointer-events-none';
-        tag.textContent = s.tag;
-        hudK.textContent = s.kelvin;
-        hudE.textContent = s.efficiency;
-        img.style.opacity = '1';
-        lucide.createIcons();
-      }, 250);
-    }
-
-    // Instant Cost Calculator Logic
-    let currentService = 'panel';
-    const serviceRates = {
-      panel: { baseMin: 2900, baseMax: 3800, duration: '1 Full Day (8 Hours)', permit: 'Included & Handled' },
-      ev: { baseMin: 850, baseMax: 1450, duration: '3 to 4 Hours', permit: 'Included & Handled' },
-      lighting: { baseMin: 1800, baseMax: 3400, duration: '1 to 2 Days', permit: 'City Code Compliant' },
-      rewire: { baseMin: 7500, baseMax: 15000, duration: '3 to 6 Days', permit: 'Full Permit & City Signoff' }
-    };
-
-    function selectCalcService(serviceKey, btnElement) {
-      currentService = serviceKey;
-      document.querySelectorAll('.calc-service-btn').forEach(btn => {
-        btn.classList.remove('border-amber-500', 'bg-amber-500/10');
-        btn.classList.add('border-white/5', 'bg-vanguard-900');
-      });
-      btnElement.classList.add('border-amber-500', 'bg-amber-500/10');
-      btnElement.classList.remove('border-white/5', 'bg-vanguard-900');
-      updateCalculator();
-    }
-
-    function updateCalculator() {
-      const sqft = parseInt(document.getElementById('sqftSlider').value);
-      document.getElementById('sqftDisplay').textContent = sqft.toLocaleString() + ' sq ft';
-
-      const priority = document.querySelector('input[name="priority"]:checked').value;
-      const rate = serviceRates[currentService];
-
-      // Multiplier based on sqft
-      const sqftMultiplier = 1 + ((sqft - 1000) / 5500) * 0.45;
-      const rushMultiplier = priority === 'rush' ? 1.25 : 1.0;
-
-      const totalMin = Math.round((rate.baseMin * sqftMultiplier * rushMultiplier) / 50) * 50;
-      const totalMax = Math.round((rate.baseMax * sqftMultiplier * rushMultiplier) / 50) * 50;
-
-      document.getElementById('estPriceRange').textContent = '$' + totalMin.toLocaleString() + ' – $' + totalMax.toLocaleString();
-      document.getElementById('estDuration').textContent = rate.duration;
-      document.getElementById('estPermit').textContent = rate.permit;
-    }
-
-    function lockInQuote() {
-      const price = document.getElementById('estPriceRange').textContent;
-      const sqft = document.getElementById('sqftDisplay').textContent;
-      const serviceName = currentService.toUpperCase();
-      openBookingModal(serviceName + ' (' + sqft + ' - ' + price + ')');
-    }
-
-    // FAQ Accordion
-    function toggleFaq(button) {
-      const content = button.nextElementSibling;
-      const icon = button.querySelector('i');
-      const isHidden = content.classList.contains('hidden');
-
-      // Close other FAQs
-      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
-      document.querySelectorAll('#faqAccordion i').forEach(i => i.classList.remove('rotate-180'));
-
-      if (isHidden) {
-        content.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-      }
-    }
-
-    // Booking Modal
-    function openBookingModal(serviceTitle) {
-      const modal = document.getElementById('bookingModal');
-      document.getElementById('modalServiceInput').value = serviceTitle || 'General Consultation';
-      document.getElementById('bookingForm').classList.remove('hidden');
-      document.getElementById('bookingSuccess').classList.add('hidden');
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    function closeBookingModal() {
-      const modal = document.getElementById('bookingModal');
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    }
-
-    function submitBooking(e) {
+    function handleFormSubmit(e) {
       e.preventDefault();
-      document.getElementById('bookingForm').classList.add('hidden');
-      document.getElementById('bookingSuccess').classList.remove('hidden');
-      lucide.createIcons();
-      setTimeout(() => {
-        closeBookingModal();
-      }, 5000);
+      document.getElementById('formSuccess').classList.remove('hidden');
+      e.target.reset();
     }
-
-    // Initialize calculator defaults
-    updateCalculator();
   </script>
+
 </body>
 </html>
